@@ -1,0 +1,5 @@
+language: r
+r_packages:
+ - knitr
+ - devtools
+sudo: required
