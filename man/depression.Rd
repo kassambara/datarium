@@ -3,14 +3,13 @@
 \docType{data}
 \name{depression}
 \alias{depression}
-\title{Depression Data}
+\title{Depression Data for Repeated Measures ANOVA (Wide Format)}
 \format{A data frame with 24 rows and 5 columns.}
 \usage{
 data("depression")
 }
 \description{
-Demo dataset for running a repeated measures ANOVA.
- The data correspond to an experiment in which a treatment for depression is
+The data correspond to an experiment in which a treatment for depression is
  studied. Two groups of patients (1: control / 2: treatment) have been
  followed at five different times (0: pre-test, 1: one month post-test, 3: 3
  months follow-up and 6: 6 months follow-up). The dependant variable is a

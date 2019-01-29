@@ -3,14 +3,13 @@
 \docType{data}
 \name{depression2}
 \alias{depression2}
-\title{Depression Data 2}
+\title{Depression Data 2 for Repeated Measures ANOVA (Long Format)}
 \format{A data frame with 96 rows and 4 columns.}
 \usage{
 data("depression2")
 }
 \description{
-Demo dataset for repeated measures ANOVA using the mixed models.
- The data correspond to an experiment in which a treatment for depression is
+The data correspond to an experiment in which a treatment for depression is
  studied. Two groups of patients (1: control / 2: treatment) have been
  followed at five different times (0: pre-test, 1: one month post-test, 3: 3
  months follow-up and 6: 6 months follow-up). The dependant variable is a

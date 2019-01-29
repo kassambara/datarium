@@ -1,4 +1,4 @@
-#'Heart Attack Data
+#'Heart Attack Data for Two Way ANOVA
 #'
 #'@description Measures of cholesterol concentration in 72 participants treated
 #'  with three different drugs. The aim is to examine the potential of new class

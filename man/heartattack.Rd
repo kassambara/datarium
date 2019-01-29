@@ -3,7 +3,7 @@
 \docType{data}
 \name{heartattack}
 \alias{heartattack}
-\title{Heart Attack Data}
+\title{Heart Attack Data for Two Way ANOVA}
 \format{A data frame with 72 rows and 4 columns.}
 \usage{
 data("heartattack")
