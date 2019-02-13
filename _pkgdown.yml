@@ -13,6 +13,7 @@ reference:
   - title: Data for Comparing Two Means
     contents:
       - mice
+      - genderweight
   - title: Data for Comparing Several Means
     contents:
       - selfestime
