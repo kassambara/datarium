@@ -1,0 +1,22 @@
+templates:
+  params:
+    bootswatch: lumen
+    ganalytics: UA-54921687-5
+reference:
+  - title: Categorical Data
+    contents:
+      - housetasks.raw
+      - titanic.raw
+  - title: Data for Regression Model
+    contents:
+      - marketing
+  - title: Data for Comparing Several Means
+    contents:
+      - selfestime
+      - heartattack
+      - performance
+      - depression
+      - depression2
+  - title: Comparing Proportions
+    contents:
+      - properties
