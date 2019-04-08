@@ -130,15 +130,14 @@ Chi-square test of independence can be used to assess the association between
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>data</span>(<span class='no'>properpeties</span>)</div><div class='output co'>#&gt; <span class='warning'>Warning: data set ‘properpeties’ not found</span></div><div class='input'><span class='fu'>head</span>(<span class='no'>properties</span>)</div><div class='output co'>#&gt; # A tibble: 6 x 2
-#&gt;   property_type buyer_type 
-#&gt;   &lt;fct&gt;         &lt;fct&gt;      
-#&gt; 1 flat          single male
-#&gt; 2 flat          single male
-#&gt; 3 flat          single male
-#&gt; 4 flat          single male
-#&gt; 5 flat          single male
-#&gt; 6 flat          single male</div></pre>
+    <pre class="examples"><div class='input'><span class='fu'>data</span>(<span class='st'>"properties"</span>)
+<span class='fu'>head</span>(<span class='fu'>as.data.frame</span>(<span class='no'>properties</span>))</div><div class='output co'>#&gt;   property_type  buyer_type
+#&gt; 1          flat single male
+#&gt; 2          flat single male
+#&gt; 3          flat single male
+#&gt; 4          flat single male
+#&gt; 5          flat single male
+#&gt; 6          flat single male</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

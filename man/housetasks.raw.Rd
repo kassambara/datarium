@@ -12,7 +12,7 @@ data("housetasks.raw")
 A data frame containing the frequency of execution of 13 house tasks in the couple.
 }
 \examples{
-data(housetasks.raw)
+data(as.data.frame(housetasks.raw))
 table(housetasks.raw)
 
 }

@@ -14,7 +14,7 @@ A data frame containing the impact of three advertising medias (youtube, faceboo
  of dollars along with the sales. The advertising experiment has been repeated 200 times.
 }
 \examples{
-data(marketing)
+data(as.data.frame(marketing))
 res.lm <- lm(sales ~ youtube*facebook, data = marketing)
 summary(res.lm)
 

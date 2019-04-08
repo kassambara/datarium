@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Depression Data 2 for Repeated Measures ANOVA (Long Format) — depression2 • datarium</title>
+<title>Headache Data for Three Way ANOVA — headache • datarium</title>
 
 <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 
@@ -32,15 +32,27 @@
 
 
 
-<meta property="og:title" content="Depression Data 2 for Repeated Measures ANOVA (Long Format) — depression2" />
+<meta property="og:title" content="Headache Data for Three Way ANOVA — headache" />
 
-<meta property="og:description" content="The data correspond to an experiment in which a treatment for depression is
- studied. Two groups of patients (1: control / 2: treatment) have been
- followed at five different times (0: pre-test, 1: one month post-test, 3: 3
- months follow-up and 6: 6 months follow-up). The dependant variable is a
- depression score.
-Repeated measures ANOVA can be performed in order to determine the effect
- of the treatment and the effect of time on the depression score." />
+<meta property="og:description" content="Measures of cholesterol concentration in 72 participants treated
+ with three different drugs. The aim is to examine the potential of new class
+ of drugs in lowering the cholesterol concentration and consequently reducing
+ heart attack.
+A pharmaceutical company tested three tretaments for migraine headache
+ sufferers. 72 participants were enrolled in the experiments. The aim is to
+ examine the potential of new class of treatments in lowering the pain score
+ associated with the migraine headache episode.
+The participants include 36 males and 36 females. Males and females were
+ further (equally) subdivided into whether they were at low or high risk of
+ migraine headache.
+This data set is suited for three way Anova test.
+It contain the following variables:
+gender, which has two
+ categories: &quot;male&quot; and &quot;female&quot;;
+risk which has two levels: &quot;low&quot; and
+ &quot;high&quot;
+treatment, which has three categories: &quot;X&quot;, &quot;Y&quot; and &quot;Z&quot;.
+" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -101,39 +113,51 @@ Repeated measures ANOVA can be performed in order to determine the effect
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Depression Data 2 for Repeated Measures ANOVA (Long Format)</h1>
+    <h1>Headache Data for Three Way ANOVA</h1>
     
-    <div class="hidden name"><code>depression2.Rd</code></div>
+    <div class="hidden name"><code>headache.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>The data correspond to an experiment in which a treatment for depression is
- studied. Two groups of patients (1: control / 2: treatment) have been
- followed at five different times (0: pre-test, 1: one month post-test, 3: 3
- months follow-up and 6: 6 months follow-up). The dependant variable is a
- depression score.</p>
-<p>Repeated measures ANOVA can be performed in order to determine the effect
- of the treatment and the effect of time on the depression score.</p>
+    <p>Measures of cholesterol concentration in 72 participants treated
+ with three different drugs. The aim is to examine the potential of new class
+ of drugs in lowering the cholesterol concentration and consequently reducing
+ heart attack.</p>
+<p>A pharmaceutical company tested three tretaments for migraine headache
+ sufferers. 72 participants were enrolled in the experiments. The aim is to
+ examine the potential of new class of treatments in lowering the pain score
+ associated with the migraine headache episode.</p>
+<p>The participants include 36 males and 36 females. Males and females were
+ further (equally) subdivided into whether they were at low or high risk of
+ migraine headache.</p>
+<p>This data set is suited for three way Anova test.</p>
+<p>It contain the following variables:</p><ul>
+<li><p>gender, which has two
+ categories: "male" and "female";</p></li>
+<li><p>risk which has two levels: "low" and
+ "high"</p></li>
+<li><p>treatment, which has three categories: "X", "Y" and "Z".</p></li>
+</ul>
     
     </div>
 
-    <pre class="usage"><span class='fu'>data</span>(<span class='st'>"depression2"</span>)</pre>
+    <pre class="usage"><span class='fu'>data</span>(<span class='st'>"headache"</span>)</pre>
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 96 rows and 4 columns.</p>
+    <p>A data frame with 72 rows and 4 columns.</p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>data</span>(<span class='no'>depression2</span>)
-<span class='fu'>head</span>(<span class='fu'>as.data.frame</span>(<span class='no'>depression2</span>))</div><div class='output co'>#&gt;   patient time treatment score
-#&gt; 1       1    0       ctr   296
-#&gt; 2       1    1       ctr   175
-#&gt; 3       1    3       ctr   187
-#&gt; 4       1    6       ctr   242
-#&gt; 5       2    0       ctr   376
-#&gt; 6       2    1       ctr   329</div></pre>
+    <pre class="examples"><div class='input'><span class='fu'>data</span>(<span class='no'>headache</span>)
+<span class='fu'>head</span>(<span class='fu'>as.data.frame</span>(<span class='no'>headache</span>))</div><div class='output co'>#&gt;   gender risk treatment pain_score
+#&gt; 1   male  low         X   79.31170
+#&gt; 2   male  low         X   76.84340
+#&gt; 3   male  low         X   70.83242
+#&gt; 4   male  low         X   81.16394
+#&gt; 5   male  low         X   75.05221
+#&gt; 6   male  low         X   73.10703</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

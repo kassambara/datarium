@@ -16,5 +16,5 @@ A one sample t-test can be performed to answer to this question.
 }
 \examples{
 data(mice)
-head(mice)
+head(as.data.frame(mice))
 }

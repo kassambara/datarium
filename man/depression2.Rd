@@ -20,5 +20,5 @@ The data correspond to an experiment in which a treatment for depression is
 }
 \examples{
 data(depression2)
-head(depression2)
+head(as.data.frame(depression2))
 }

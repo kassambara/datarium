@@ -16,6 +16,6 @@
 #'@usage data("properties")
 #'@format A data frame with 333 rows and 2 columns.
 #' @examples
-#' data(properpeties)
-#' head(properties)
+#' data("properties")
+#' head(as.data.frame(properties))
 NULL

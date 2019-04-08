@@ -1,4 +1,4 @@
-#'Job Satisfaction Data for Two-Way ANOVA)
+#'Job Satisfaction Data for Two-Way ANOVA
 #'
 #'@description
 #'  Contains the job satisfaction score organized by gender and education level.

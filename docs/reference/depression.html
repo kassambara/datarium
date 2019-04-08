@@ -127,15 +127,13 @@ Repeated measures ANOVA can be performed in order to determine the effect
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='fu'>data</span>(<span class='no'>depression</span>)
-<span class='fu'>head</span>(<span class='no'>depression</span>)</div><div class='output co'>#&gt; # A tibble: 6 x 5
-#&gt;   treatment   dv0   dv1   dv3   dv6
-#&gt;   &lt;fct&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
-#&gt; 1 ctr         296   175   187   242
-#&gt; 2 ctr         376   329   236   126
-#&gt; 3 ctr         309   238   150   173
-#&gt; 4 ctr         222    60    82   135
-#&gt; 5 ctr         150   271   250   266
-#&gt; 6 ctr         316   291   238   194</div></pre>
+<span class='fu'>head</span>(<span class='fu'>as.data.frame</span>(<span class='no'>depression</span>))</div><div class='output co'>#&gt;   treatment dv0 dv1 dv3 dv6
+#&gt; 1       ctr 296 175 187 242
+#&gt; 2       ctr 376 329 236 126
+#&gt; 3       ctr 309 238 150 173
+#&gt; 4       ctr 222  60  82 135
+#&gt; 5       ctr 150 271 250 266
+#&gt; 6       ctr 316 291 238 194</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

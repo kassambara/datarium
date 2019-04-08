@@ -17,11 +17,15 @@ reference:
       - genderweight
   - title: Data for Comparing Several Means
     contents:
-      - selfestime
+      - selfesteem
+      - selfesteem2
+      - weightloss
       - heartattack
+      - headache
       - performance
       - depression
       - depression2
+      - jobsatisfaction
   - title: Comparing Proportions
     contents:
       - properties

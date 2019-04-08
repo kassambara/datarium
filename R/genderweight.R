@@ -11,5 +11,5 @@
 #'@format A data frame with 40 rows and 2 columns
 #' @examples
 #' data(genderweight)
-#' head(genderweight)
+#' head(as.data.frame(genderweight))
 NULL

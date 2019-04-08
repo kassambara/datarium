@@ -9,5 +9,5 @@
 #'@format A data frame with 10 rows and 3 columns
 #' @examples
 #' data(mice2)
-#' head(mice2)
+#' head(as.data.frame(mice2))
 NULL

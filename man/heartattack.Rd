@@ -3,7 +3,7 @@
 \docType{data}
 \name{heartattack}
 \alias{heartattack}
-\title{Heart Attack Data for Two Way ANOVA}
+\title{Heart Attack Data for Three Way ANOVA}
 \format{A data frame with 72 rows and 4 columns.}
 \usage{
 data("heartattack")
@@ -18,7 +18,7 @@ Measures of cholesterol concentration in 72 participants treated
  females were further (equally) subdivided into whether they were at low or
  high risk of heart attack.
 
- This data set is suited for two way Anova test.
+ This data set is suited for three way Anova test.
 
  It contain the following variables: \itemize{ \item gender, which has two
  categories: "male" and "female"; \item risk which has two levels: "low" and
@@ -28,5 +28,5 @@ Measures of cholesterol concentration in 72 participants treated
 }
 \examples{
 data(heartattack)
-head(heartattack)
+head(as.data.frame(heartattack))
 }

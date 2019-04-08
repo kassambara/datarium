@@ -3,7 +3,7 @@
 \docType{data}
 \name{jobsatisfaction}
 \alias{jobsatisfaction}
-\title{Job Satisfaction Data for Two-Way ANOVA)}
+\title{Job Satisfaction Data for Two-Way ANOVA}
 \format{A data frame with 58 rows and 3 columns.}
 \usage{
 data("jobsatisfaction")

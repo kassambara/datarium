@@ -15,5 +15,5 @@ Contains the performance score measures of participants at two
 }
 \examples{
 data(performance)
-head(performance)
+head(as.data.frame(performance))
 }

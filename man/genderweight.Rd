@@ -17,5 +17,5 @@ Contains the weights by sex (M for male; F for
 }
 \examples{
 data(genderweight)
-head(genderweight)
+head(as.data.frame(genderweight))
 }

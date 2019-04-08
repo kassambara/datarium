@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Heart Attack Data for Two Way ANOVA — heartattack • datarium</title>
+<title>Heart Attack Data for Three Way ANOVA — heartattack • datarium</title>
 
 <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 
@@ -32,7 +32,7 @@
 
 
 
-<meta property="og:title" content="Heart Attack Data for Two Way ANOVA — heartattack" />
+<meta property="og:title" content="Heart Attack Data for Three Way ANOVA — heartattack" />
 
 <meta property="og:description" content="Measures of cholesterol concentration in 72 participants treated
  with three different drugs. The aim is to examine the potential of new class
@@ -41,7 +41,7 @@
 The participants include 36 males and 36 females. Males and
  females were further (equally) subdivided into whether they were at low or
  high risk of heart attack.
-This data set is suited for two way Anova test.
+This data set is suited for three way Anova test.
 It contain the following variables:
 gender, which has two
  categories: &quot;male&quot; and &quot;female&quot;;
@@ -109,7 +109,7 @@ drug, which has three categories: &quot;A&quot;, &quot;B&quot; and &quot;C&quot;
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Heart Attack Data for Two Way ANOVA</h1>
+    <h1>Heart Attack Data for Three Way ANOVA</h1>
     
     <div class="hidden name"><code>heartattack.Rd</code></div>
     </div>
@@ -123,7 +123,7 @@ drug, which has three categories: &quot;A&quot;, &quot;B&quot; and &quot;C&quot;
 <p>The participants include 36 males and 36 females. Males and
  females were further (equally) subdivided into whether they were at low or
  high risk of heart attack.</p>
-<p>This data set is suited for two way Anova test.</p>
+<p>This data set is suited for three way Anova test.</p>
 <p>It contain the following variables:</p><ul>
 <li><p>gender, which has two
  categories: "male" and "female";</p></li>
@@ -143,15 +143,13 @@ drug, which has three categories: &quot;A&quot;, &quot;B&quot; and &quot;C&quot;
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='fu'>data</span>(<span class='no'>heartattack</span>)
-<span class='fu'>head</span>(<span class='no'>heartattack</span>)</div><div class='output co'>#&gt; # A tibble: 6 x 4
-#&gt;   gender risk  drug  cholesterol
-#&gt;   &lt;fct&gt;  &lt;fct&gt; &lt;fct&gt;       &lt;dbl&gt;
-#&gt; 1 male   low   A            5.24
-#&gt; 2 male   low   A            5.08
-#&gt; 3 male   low   A            4.68
-#&gt; 4 male   low   A            5.36
-#&gt; 5 male   low   A            4.96
-#&gt; 6 male   low   A            4.83</div></pre>
+<span class='fu'>head</span>(<span class='fu'>as.data.frame</span>(<span class='no'>heartattack</span>))</div><div class='output co'>#&gt;   gender risk drug cholesterol
+#&gt; 1   male  low    A    5.238730
+#&gt; 2   male  low    A    5.075693
+#&gt; 3   male  low    A    4.678653
+#&gt; 4   male  low    A    5.361076
+#&gt; 5   male  low    A    4.957381
+#&gt; 6   male  low    A    4.828897</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

@@ -118,8 +118,7 @@
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>data</span>(<span class='no'>marketing</span>)
-<span class='no'>res.lm</span> <span class='kw'>&lt;-</span> <span class='fu'>lm</span>(<span class='no'>sales</span> ~ <span class='no'>youtube</span>*<span class='no'>facebook</span>, <span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>marketing</span>)
+    <pre class="examples"><div class='input'><span class='fu'>data</span>(<span class='fu'>as.data.frame</span>(<span class='no'>marketing</span>))</div><div class='output co'>#&gt; <span class='warning'>Warning: data set ‘as.data.frame(marketing)’ not found</span></div><div class='input'><span class='no'>res.lm</span> <span class='kw'>&lt;-</span> <span class='fu'>lm</span>(<span class='no'>sales</span> ~ <span class='no'>youtube</span>*<span class='no'>facebook</span>, <span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>marketing</span>)
 <span class='fu'>summary</span>(<span class='no'>res.lm</span>)</div><div class='output co'>#&gt; 
 #&gt; Call:
 #&gt; lm(formula = sales ~ youtube * facebook, data = marketing)

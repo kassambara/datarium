@@ -6,7 +6,7 @@
 #'@usage data("housetasks.raw")
 #'@format A data frame with 1744 rows and 2 columns (tasks and status).
 #' @examples
-#' data(housetasks.raw)
+#' data(as.data.frame(housetasks.raw))
 #' table(housetasks.raw)
 #'
 NULL

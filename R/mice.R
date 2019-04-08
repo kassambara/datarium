@@ -10,5 +10,5 @@
 #'@format A data frame with 10 rows and 2 columns
 #' @examples
 #' data(mice)
-#' head(mice)
+#' head(as.data.frame(mice))
 NULL

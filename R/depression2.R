@@ -14,5 +14,5 @@
 #'@format A data frame with 96 rows and 4 columns.
 #' @examples
 #' data(depression2)
-#' head(depression2)
+#' head(as.data.frame(depression2))
 NULL

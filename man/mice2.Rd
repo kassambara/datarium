@@ -15,5 +15,5 @@ A paired-samples t-test can be performed to answer to this question.
 }
 \examples{
 data(mice2)
-head(mice2)
+head(as.data.frame(mice2))
 }

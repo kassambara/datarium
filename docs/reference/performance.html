@@ -119,15 +119,13 @@
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='fu'>data</span>(<span class='no'>performance</span>)
-<span class='fu'>head</span>(<span class='no'>performance</span>)</div><div class='output co'>#&gt; # A tibble: 6 x 5
-#&gt;   patient gender anxiety    t1    t2
-#&gt;     &lt;int&gt; &lt;fct&gt;  &lt;fct&gt;   &lt;dbl&gt; &lt;dbl&gt;
-#&gt; 1       1 male   low      3.76  3.48
-#&gt; 2       2 male   low      3.31  3.72
-#&gt; 3       3 male   low      3.43  3.37
-#&gt; 4       4 male   low      3.51  3.69
-#&gt; 5       5 male   low      3.54  3.62
-#&gt; 6       6 male   low      3.42  3.58</div></pre>
+<span class='fu'>head</span>(<span class='fu'>as.data.frame</span>(<span class='no'>performance</span>))</div><div class='output co'>#&gt;   patient gender anxiety       t1       t2
+#&gt; 1       1   male     low 3.764417 3.478506
+#&gt; 2       2   male     low 3.306574 3.719924
+#&gt; 3       3   male     low 3.425011 3.371414
+#&gt; 4       4   male     low 3.510243 3.686593
+#&gt; 5       5   male     low 3.536350 3.618538
+#&gt; 6       6   male     low 3.416418 3.580656</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

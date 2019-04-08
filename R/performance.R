@@ -9,5 +9,5 @@
 #'@format A data frame with 24 rows and 5 columns.
 #' @examples
 #' data(performance)
-#' head(performance)
+#' head(as.data.frame(performance))
 NULL

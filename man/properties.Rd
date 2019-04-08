@@ -22,6 +22,6 @@ Contains the type of properties and the buyer types. Buyer
  purchased.
 }
 \examples{
-data(properpeties)
-head(properties)
+data("properties")
+head(as.data.frame(properties))
 }
