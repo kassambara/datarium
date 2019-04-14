@@ -15,17 +15,19 @@ reference:
       - mice
       - mice2
       - genderweight
-  - title: Data for Comparing Several Means
+  - title: Data for Independent-Measures ANOVA
+    contents:
+      - heartattack
+      - headache
+      - performance
+      - jobsatisfaction
+  - title: Data for Repeated Measures ANOVA
     contents:
       - selfesteem
       - selfesteem2
       - weightloss
-      - heartattack
-      - headache
-      - performance
       - depression
       - depression2
-      - jobsatisfaction
   - title: Comparing Proportions
     contents:
       - properties

@@ -5,9 +5,9 @@
 #'
 #'  One-way repeated measures ANOVA can be performed in order to determine the
 #'  effect of time on the self-esteem score.
-#'@name selfestime
+#'@name selfesteem
 #'@docType data
-#'@usage data("selfestime")
+#'@usage data("selfesteem")
 #'@format A data frame with 10 rows and 4 columns.
 #' @examples
 #' data(selfesteem)
