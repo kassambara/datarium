@@ -1,8 +1,8 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 [![Build Status](https://api.travis-ci.org/kassambara/ggpubr.png)](https://travis-ci.org/kassambara/datarium)
 
-datarium: Data bank for statistical analyses an visualization
-=============================================================
+datarium: Data bank for statistical analyses and visualization
+==============================================================
 
 Contains data organized by topic: categorical data, regression model, means comparisons, independent and repeated measures ANOVA, mixed ANOVA and ANCOVA.
 
