@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Depression Data for Repeated Measures ANOVA (Wide Format) — depression • datarium</title>
+<title>Depression Data for Two Way Mixed ANOVA — depression • datarium</title>
 
 <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 
@@ -32,7 +32,7 @@
 
 
 
-<meta property="og:title" content="Depression Data for Repeated Measures ANOVA (Wide Format) — depression" />
+<meta property="og:title" content="Depression Data for Two Way Mixed ANOVA — depression" />
 
 <meta property="og:description" content="The data correspond to an experiment in which a treatment for depression is
  studied. Two groups of patients (1: control / 2: treatment) have been
@@ -101,7 +101,7 @@ Repeated measures ANOVA can be performed in order to determine the effect
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Depression Data for Repeated Measures ANOVA (Wide Format)</h1>
+    <h1>Depression Data for Two Way Mixed ANOVA</h1>
     
     <div class="hidden name"><code>depression.Rd</code></div>
     </div>
@@ -127,13 +127,13 @@ Repeated measures ANOVA can be performed in order to determine the effect
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='fu'>data</span>(<span class='no'>depression</span>)
-<span class='fu'>head</span>(<span class='fu'>as.data.frame</span>(<span class='no'>depression</span>))</div><div class='output co'>#&gt;   treatment dv0 dv1 dv3 dv6
-#&gt; 1       ctr 296 175 187 242
-#&gt; 2       ctr 376 329 236 126
-#&gt; 3       ctr 309 238 150 173
-#&gt; 4       ctr 222  60  82 135
-#&gt; 5       ctr 150 271 250 266
-#&gt; 6       ctr 316 291 238 194</div></pre>
+<span class='fu'>head</span>(<span class='fu'>as.data.frame</span>(<span class='no'>depression</span>))</div><div class='output co'>#&gt;   id treatment  t0  t1  t2  t3
+#&gt; 1  1       ctr 296 175 187 242
+#&gt; 2  2       ctr 376 329 236 126
+#&gt; 3  3       ctr 309 238 150 173
+#&gt; 4  4       ctr 222  60  82 135
+#&gt; 5  5       ctr 150 271 250 266
+#&gt; 6  6       ctr 316 291 238 194</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

@@ -25,7 +25,6 @@ Contains data organized by topic: categorical data, regression model, means comp
     -   selfesteem2
     -   weightloss
     -   depression
-    -   depression2
 -   **Mixed ANOVA**
     -   anxiety
 -   **ANCOVA**
