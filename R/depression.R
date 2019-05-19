@@ -1,4 +1,4 @@
-#'Depression Data for Repeated Measures ANOVA (Wide Format)
+#'Depression Data for Two Way Mixed ANOVA
 #'
 #'@description
 #'  The data correspond to an experiment in which a treatment for depression is
