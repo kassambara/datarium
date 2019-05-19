@@ -8,7 +8,7 @@
 #'@usage data("marketing")
 #'@format A data frame with 200 rows and 4 columns.
 #' @examples
-#' data(as.data.frame(marketing))
+#' data(marketing)
 #' res.lm <- lm(sales ~ youtube*facebook, data = marketing)
 #' summary(res.lm)
 #'
