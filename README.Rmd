@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 ```
 
 
-[![Build Status](https://api.travis-ci.org/kassambara/ggpubr.png)](https://travis-ci.org/kassambara/datarium)
+[![Build Status](https://api.travis-ci.org/kassambara/datarium.png)](https://travis-ci.org/kassambara/datarium)
 
 
 # datarium: Data bank for statistical analyses and visualization

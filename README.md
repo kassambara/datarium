@@ -1,5 +1,5 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-[![Build Status](https://api.travis-ci.org/kassambara/ggpubr.png)](https://travis-ci.org/kassambara/datarium)
+[![Build Status](https://api.travis-ci.org/kassambara/datarium.png)](https://travis-ci.org/kassambara/datarium)
 
 datarium: Data bank for statistical analyses and visualization
 ==============================================================
