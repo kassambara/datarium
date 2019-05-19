@@ -20,7 +20,7 @@
 #'@name weightloss
 #'@docType data
 #'@usage data("weightloss")
-#'@format A data frame with 144 rows and 5 columns.
+#'@format A data frame with 48 rows and 6 columns.
 #' @examples
 #' data(weightloss)
 #' head(as.data.frame(weightloss))

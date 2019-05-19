@@ -8,7 +8,7 @@
 #'@name genderweight
 #'@docType data
 #'@usage data("genderweight")
-#'@format A data frame with 40 rows and 2 columns
+#'@format A data frame with 40 rows and 3 columns
 #' @examples
 #' data(genderweight)
 #' head(as.data.frame(genderweight))

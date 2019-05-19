@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Weight Loss Score Data for Three-way Repeated Measures ANOVA — weightloss • datarium</title>
+<title>Anxiety Data for Two-Way Mixed ANOVA — anxiety • datarium</title>
 
 <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 
@@ -32,21 +32,13 @@
 
 
 
-<meta property="og:title" content="Weight Loss Score Data for Three-way Repeated Measures ANOVA — weightloss" />
+<meta property="og:title" content="Anxiety Data for Two-Way Mixed ANOVA — anxiety" />
 
-<meta property="og:description" content="A researcher wanted to assess the effects of Diet and Exercises
- on weight loss in 10 sedentary males.
-The participants were enrolled in four trials: (1) no diet and no exercises;
- (2) diet only; (3) exercises only; and (4) diet and exercises combined.
-Each participant performed all four trials. The order of the trials was
- counterbalanced and sufficient time was allowed between trials to allow any
- effects of previous trials to have dissipated (i.e., a &quot;wash out&quot; period).
-Each trial lasted nine weeks and the weight loss score was measured at the
- beginning of each trial (t1), at the midpoint of each trial (t2) and at the
- end of each trial (t3).
-Three-way repeated measures ANOVA can be performed in order to determine
- whether there is interaction between diet, exercises and time on the weight
- loss score." />
+<meta property="og:description" content="The data provide the anxiety score, measured at three time
+ points, of three groups of individuals practicing physical exercises at
+ different levels (grp1: basal, grp2: moderate and grp3: high)
+Two-way mixed ANOVA can be used to evaluate if there is interaction between
+ group and time in explaining the anxiety score." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -107,45 +99,37 @@ Three-way repeated measures ANOVA can be performed in order to determine
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Weight Loss Score Data for Three-way Repeated Measures ANOVA</h1>
+    <h1>Anxiety Data for Two-Way Mixed ANOVA</h1>
     
-    <div class="hidden name"><code>weightloss.Rd</code></div>
+    <div class="hidden name"><code>anxiety.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>A researcher wanted to assess the effects of Diet and Exercises
- on weight loss in 10 sedentary males.</p>
-<p>The participants were enrolled in four trials: (1) no diet and no exercises;
- (2) diet only; (3) exercises only; and (4) diet and exercises combined.</p>
-<p>Each participant performed all four trials. The order of the trials was
- counterbalanced and sufficient time was allowed between trials to allow any
- effects of previous trials to have dissipated (i.e., a "wash out" period).</p>
-<p>Each trial lasted nine weeks and the weight loss score was measured at the
- beginning of each trial (t1), at the midpoint of each trial (t2) and at the
- end of each trial (t3).</p>
-<p>Three-way repeated measures ANOVA can be performed in order to determine
- whether there is interaction between diet, exercises and time on the weight
- loss score.</p>
+    <p>The data provide the anxiety score, measured at three time
+ points, of three groups of individuals practicing physical exercises at
+ different levels (grp1: basal, grp2: moderate and grp3: high)</p>
+<p>Two-way mixed ANOVA can be used to evaluate if there is interaction between
+ group and time in explaining the anxiety score.</p>
     
     </div>
 
-    <pre class="usage"><span class='fu'>data</span>(<span class='st'>"weightloss"</span>)</pre>
+    <pre class="usage"><span class='fu'>data</span>(<span class='st'>"anxiety"</span>)</pre>
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 48 rows and 6 columns.</p>
+    <p>A data frame with 45 rows and 5 columns.</p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>data</span>(<span class='no'>weightloss</span>)
-<span class='fu'>head</span>(<span class='fu'>as.data.frame</span>(<span class='no'>weightloss</span>))</div><div class='output co'>#&gt;   id diet exercises    t1    t2    t3
-#&gt; 1  1   no        no 10.43 13.21 11.59
-#&gt; 2  2   no        no 11.59 10.66 13.21
-#&gt; 3  3   no        no 11.35 11.12 11.35
-#&gt; 4  4   no        no 11.12  9.50 11.12
-#&gt; 5  5   no        no  9.50  9.73 12.28
-#&gt; 6  6   no        no  9.50 12.74 10.43</div></pre>
+    <pre class="examples"><div class='input'><span class='fu'>data</span>(<span class='no'>anxiety</span>)
+<span class='fu'>head</span>(<span class='fu'>as.data.frame</span>(<span class='no'>anxiety</span>))</div><div class='output co'>#&gt;   id group   t1   t2   t3
+#&gt; 1  1  grp1 14.1 14.4 14.1
+#&gt; 2  2  grp1 14.5 14.6 14.3
+#&gt; 3  3  grp1 15.7 15.2 14.9
+#&gt; 4  4  grp1 16.0 15.5 15.3
+#&gt; 5  5  grp1 16.5 15.8 15.7
+#&gt; 6  6  grp1 16.9 16.5 16.2</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

@@ -11,7 +11,11 @@ data("performance")
 \description{
 Contains the performance score measures of participants at two
  time points. The aim of this study is to evaluate the effect of gender and
- anxiety on performance score. The three-way mixed ANOVA test can be used.
+ stress on performance score. The three-way mixed ANOVA test can be used to
+ investigate this question.
+
+ The data include two between-subjects factors (gender and stress) and one
+ within-subject factor (time, repeated measures).
 }
 \examples{
 data(performance)

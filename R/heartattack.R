@@ -19,7 +19,7 @@
 #'@name heartattack
 #'@docType data
 #'@usage data("heartattack")
-#'@format A data frame with 72 rows and 4 columns.
+#'@format A data frame with 72 rows and 5 columns.
 #' @examples
 #' data(heartattack)
 #' head(as.data.frame(heartattack))

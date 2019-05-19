@@ -12,7 +12,7 @@ data("titanic.raw")
 Survival of passengers on the Titanic. This data set provides
  information on the fate of passengers on the fatal maiden voyage of the
  ocean liner ‘Titanic’. Columns are economic status (Class), Sex,
- Age and Survivived.
+ Age and Survived.
 }
 \examples{
 data(titanic.raw)

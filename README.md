@@ -1,17 +1,40 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 [![Build Status](https://api.travis-ci.org/kassambara/ggpubr.png)](https://travis-ci.org/kassambara/datarium)
 
-datarium
-========
+datarium: Data bank for statistical analyses an visualization
+=============================================================
 
-STHDA/Datanovia data bank for statistical analyses an visualization.
+Contains data organized by topic: categorical data, regression model, means comparisons, independent and repeated measures ANOVA, mixed ANOVA and ANCOVA.
 
-Categorical data sets
----------------------
+-   **Categorical Data**
+    -   housetasks.raw
+    -   titanic.raw
+-   **Regression Model**
+    -   marketing
+-   **Comparing Two Means**
+    -   mice
+    -   mice2
+    -   genderweight
+-   **Independent-Measures ANOVA**
+    -   heartattack
+    -   headache
+    -   performance
+    -   jobsatisfaction
+-   **Repeated Measures ANOVA**
+    -   selfesteem
+    -   selfesteem2
+    -   weightloss
+    -   depression
+    -   depression2
+-   **Mixed ANOVA**
+    -   anxiety
+-   **ANCOVA**
+    -   stress
+-   **Comparing Proportions**
+    -   properties
 
--   `Titanic` \[R base data set\]: Survival of passengers on the Titanic. This data set provides information on the fate of passengers on the fatal maiden voyage of the ocean liner ‘Titanic’, summarized according to economic status (class), sex, age and survival.
--   `housetasks` \[factoextra package\]: A data frame containing the frequency of execution of 13 house tasks in the couple.
--   `properties`: contains two categorical variables: the type of properties and the buyer types. Can be used for chi-square test of independence.
+Helper functions
+----------------
 
 The two data sets (`Titanic` and `housetasks`) are frequency/contingency table. We'll create our demo data sets by recovering the original data from Titanic and housetasks tables.
 

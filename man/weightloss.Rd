@@ -4,7 +4,7 @@
 \name{weightloss}
 \alias{weightloss}
 \title{Weight Loss Score Data for Three-way Repeated Measures ANOVA}
-\format{A data frame with 144 rows and 5 columns.}
+\format{A data frame with 48 rows and 6 columns.}
 \usage{
 data("weightloss")
 }

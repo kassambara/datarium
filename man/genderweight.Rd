@@ -4,7 +4,7 @@
 \name{genderweight}
 \alias{genderweight}
 \title{Weight Data By Gender for Two-Samples Mean Test}
-\format{A data frame with 40 rows and 2 columns}
+\format{A data frame with 40 rows and 3 columns}
 \usage{
 data("genderweight")
 }

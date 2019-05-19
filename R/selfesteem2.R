@@ -16,7 +16,7 @@
 #'@name selfesteem2
 #'@docType data
 #'@usage data("selfesteem2")
-#'@format A data frame with 10 rows and 4 columns.
+#'@format A data frame with 24 rows and 5 columns.
 #' @examples
 #' data(selfesteem2)
 #' head(as.data.frame(selfesteem2))

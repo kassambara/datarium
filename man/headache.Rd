@@ -14,7 +14,7 @@ Measures of cholesterol concentration in 72 participants treated
  of drugs in lowering the cholesterol concentration and consequently reducing
  heart attack.
 
- A pharmaceutical company tested three tretaments for migraine headache
+ A pharmaceutical company tested three treatments for migraine headache
  sufferers. 72 participants were enrolled in the experiments. The aim is to
  examine the potential of new class of treatments in lowering the pain score
  associated with the migraine headache episode.

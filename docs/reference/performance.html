@@ -36,7 +36,10 @@
 
 <meta property="og:description" content="Contains the performance score measures of participants at two
  time points. The aim of this study is to evaluate the effect of gender and
- anxiety on performance score. The three-way mixed ANOVA test can be used." />
+ stress on performance score. The three-way mixed ANOVA test can be used to
+ investigate this question.
+The data include two between-subjects factors (gender and stress) and one
+ within-subject factor (time, repeated measures)." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -106,7 +109,10 @@
     
     <p>Contains the performance score measures of participants at two
  time points. The aim of this study is to evaluate the effect of gender and
- anxiety on performance score. The three-way mixed ANOVA test can be used.</p>
+ stress on performance score. The three-way mixed ANOVA test can be used to
+ investigate this question.</p>
+<p>The data include two between-subjects factors (gender and stress) and one
+ within-subject factor (time, repeated measures).</p>
     
     </div>
 
@@ -119,13 +125,13 @@
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='fu'>data</span>(<span class='no'>performance</span>)
-<span class='fu'>head</span>(<span class='fu'>as.data.frame</span>(<span class='no'>performance</span>))</div><div class='output co'>#&gt;   patient gender anxiety       t1       t2
-#&gt; 1       1   male     low 3.764417 3.478506
-#&gt; 2       2   male     low 3.306574 3.719924
-#&gt; 3       3   male     low 3.425011 3.371414
-#&gt; 4       4   male     low 3.510243 3.686593
-#&gt; 5       5   male     low 3.536350 3.618538
-#&gt; 6       6   male     low 3.416418 3.580656</div></pre>
+<span class='fu'>head</span>(<span class='fu'>as.data.frame</span>(<span class='no'>performance</span>))</div><div class='output co'>#&gt;   id gender stress       t1       t2
+#&gt; 1  1   male    low 5.964417 5.578506
+#&gt; 2  2   male    low 5.506574 5.819924
+#&gt; 3  3   male    low 5.625011 5.471414
+#&gt; 4  4   male    low 5.710243 5.786593
+#&gt; 5  5   male    low 5.736350 5.718538
+#&gt; 6  6   male    low 5.616418 5.680656</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

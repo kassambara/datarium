@@ -28,6 +28,12 @@ reference:
       - weightloss
       - depression
       - depression2
+  - title: Data for Mixed ANOVA
+    contents:
+      - anxiety
+  - title: Data for ANCOVA
+    contents:
+      - stress
   - title: Comparing Proportions
     contents:
       - properties
