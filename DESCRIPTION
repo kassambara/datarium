@@ -12,6 +12,7 @@ Encoding: UTF-8
 LazyData: true
 Depends:
     R (>= 3.1.0)
+URL: https://rpkgs.datanovia.com/datarium/
 BugReports: https://github.com/kassambara/datarium/issues
 RoxygenNote: 6.1.1
 Suggests: 
