@@ -1,7 +1,7 @@
 Package: datarium
 Type: Package
 Title: Data Bank for Statistical Analysis and Visualization
-Version: 0.1.0
+Version: 0.1.0.999
 Date: 2019-05-19
 Authors@R: c(
     person("Alboukadel", "Kassambara", role = c("aut", "cre"), email = "alboukadel.kassambara@gmail.com"))
