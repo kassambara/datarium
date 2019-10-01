@@ -1,7 +1,8 @@
 # datarium 0.1.999
 
 ## New features
-
+ 
+- New data set `antismoking` 
 
 ## Major changes
 

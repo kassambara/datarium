@@ -30,6 +30,7 @@ Contains data organized by topics: categorical data, regression model, means com
 - **Categorical Data**
     - housetasks.raw
     - titanic.raw
+    - antismoking
 - **Regression Model**
     - marketing
 - **Comparing Two Means**
