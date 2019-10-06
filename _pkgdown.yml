@@ -8,6 +8,7 @@ reference:
       - housetasks.raw
       - titanic.raw
       - antismoking
+      - taskachievment
   - title: Data for Regression Model
     contents:
       - marketing
