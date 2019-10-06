@@ -1,4 +1,4 @@
-#'Anti-Smoking Emotive Communication
+#'Anti-Smoking Emotive Communication Data for McNemar Test
 #'
 #'@description Paired nominal data providing the smoking status 62 individuals
 #'  before and after emotive video communications showing the danger of smoking.

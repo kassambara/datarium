@@ -3,7 +3,7 @@
 \docType{data}
 \name{antismoking}
 \alias{antismoking}
-\title{Anti-Smoking Emotive Communication}
+\title{Anti-Smoking Emotive Communication Data for McNemar Test}
 \format{A data frame with 62 rows and 3 columns.}
 \usage{
 data("antismoking")

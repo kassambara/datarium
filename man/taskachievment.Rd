@@ -3,7 +3,7 @@
 \docType{data}
 \name{taskachievment}
 \alias{taskachievment}
-\title{Task Achievment}
+\title{Task Achievment Data for Cochran's Q Test}
 \format{A data frame with 73 rows and 4 columns.}
 \usage{
 data("taskachievment")

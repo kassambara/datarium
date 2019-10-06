@@ -1,4 +1,4 @@
-#'Task Achievment
+#'Task Achievment Data for Cochran's Q Test
 #'
 #'@description Repeated measures nominal designs where 73 subjects are asked to
 #'  perform 3 tasks. The outcome of each task is a dichotomous value, success or
