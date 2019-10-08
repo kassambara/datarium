@@ -9,6 +9,7 @@ reference:
       - titanic.raw
       - antismoking
       - taskachievment
+      - renalstone
   - title: Data for Regression Model
     contents:
       - marketing
