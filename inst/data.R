@@ -64,6 +64,6 @@ renalstone <- bind_rows(renalstone.males, renalstone.females) %>%
   mutate(
     gender = factor(gender, levels = c("male", "female")),
     stone = factor(stone, levels = c("yes", "no")),
-    age = factor(age, levels = c("30-39", "40-49", "50-59"))
+    age = factor(age, levels = c("30-39", "40-49", "50-59"), ordered = TRUE)
   )
 
