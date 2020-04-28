@@ -11,9 +11,10 @@ A data frame with 200 rows and 4 columns.
 data("marketing")
 }
 \description{
-A data frame containing the impact of three advertising medias (youtube, facebook and
- newspaper) on sales. Data are the advertising budget in thousands
- of dollars along with the sales (in thousands of units). The advertising experiment has been repeated 200 times.
+A data frame containing the impact of three advertising medias
+ (youtube, facebook and newspaper) on sales. Data are the advertising budget
+ in thousands of dollars along with the sales (in thousands of units). The
+ advertising experiment has been repeated 200 times. This is a simulated data.
 }
 \examples{
 data(marketing)
