@@ -4,7 +4,9 @@
 \name{stress}
 \alias{stress}
 \title{Stress Data for Two-Way ANCOVA}
-\format{A data frame with 60 rows and 5 columns.}
+\format{
+A data frame with 60 rows and 5 columns.
+}
 \usage{
 data("stress")
 }

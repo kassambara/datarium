@@ -4,7 +4,9 @@
 \name{properties}
 \alias{properties}
 \title{Properties Data for Chi-square Test of Independence}
-\format{A data frame with 333 rows and 2 columns.}
+\format{
+A data frame with 333 rows and 2 columns.
+}
 \usage{
 data("properties")
 }

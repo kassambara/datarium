@@ -4,7 +4,9 @@
 \name{renalstone}
 \alias{renalstone}
 \title{Risk of Renal Stone Data for Cochran-Armitage Trend Test}
-\format{A data frame with 3513 rows and 3 columns.}
+\format{
+A data frame with 3513 rows and 3 columns.
+}
 \usage{
 data("renalstone")
 }

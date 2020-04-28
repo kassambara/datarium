@@ -2,7 +2,7 @@
 
 ## New features
  
-- New data set `antismoking` 
+- New data set `antismoking`, `taskachievment` and `renalstone`
 
 ## Major changes
 

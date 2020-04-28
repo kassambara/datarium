@@ -4,7 +4,9 @@
 \name{selfesteem}
 \alias{selfesteem}
 \title{Self-Esteem Score Data for One-way Repeated Measures ANOVA}
-\format{A data frame with 10 rows and 4 columns.}
+\format{
+A data frame with 10 rows and 4 columns.
+}
 \usage{
 data("selfesteem")
 }

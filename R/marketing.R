@@ -2,7 +2,7 @@
 #'
 #'@description A data frame containing the impact of three advertising medias (youtube, facebook and
 #'  newspaper) on sales. Data are the advertising budget in thousands
-#'  of dollars along with the sales. The advertising experiment has been repeated 200 times.
+#'  of dollars along with the sales (in thousands of units). The advertising experiment has been repeated 200 times.
 #'@name marketing
 #'@docType data
 #'@usage data("marketing")

@@ -4,14 +4,16 @@
 \name{marketing}
 \alias{marketing}
 \title{Marketing Data Set}
-\format{A data frame with 200 rows and 4 columns.}
+\format{
+A data frame with 200 rows and 4 columns.
+}
 \usage{
 data("marketing")
 }
 \description{
 A data frame containing the impact of three advertising medias (youtube, facebook and
  newspaper) on sales. Data are the advertising budget in thousands
- of dollars along with the sales. The advertising experiment has been repeated 200 times.
+ of dollars along with the sales (in thousands of units). The advertising experiment has been repeated 200 times.
 }
 \examples{
 data(marketing)

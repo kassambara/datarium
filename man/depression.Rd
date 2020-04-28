@@ -4,7 +4,9 @@
 \name{depression}
 \alias{depression}
 \title{Depression Data for Two Way Mixed ANOVA}
-\format{A data frame with 24 rows and 5 columns.}
+\format{
+A data frame with 24 rows and 5 columns.
+}
 \usage{
 data("depression")
 }

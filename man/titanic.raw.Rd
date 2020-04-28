@@ -4,7 +4,9 @@
 \name{titanic.raw}
 \alias{titanic.raw}
 \title{Survival of Passengers on the Titanic}
-\format{A data frame with 2201 rows and 4 columns.}
+\format{
+A data frame with 2201 rows and 4 columns.
+}
 \usage{
 data("titanic.raw")
 }

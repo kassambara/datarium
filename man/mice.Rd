@@ -4,7 +4,9 @@
 \name{mice}
 \alias{mice}
 \title{Mice Weight Data for One Sample Mean Test}
-\format{A data frame with 10 rows and 2 columns}
+\format{
+A data frame with 10 rows and 2 columns
+}
 \usage{
 data("mice")
 }

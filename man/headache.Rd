@@ -4,7 +4,9 @@
 \name{headache}
 \alias{headache}
 \title{Headache Data for Three Way ANOVA}
-\format{A data frame with 72 rows and 4 columns.}
+\format{
+A data frame with 72 rows and 4 columns.
+}
 \usage{
 data("headache")
 }

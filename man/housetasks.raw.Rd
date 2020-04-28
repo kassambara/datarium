@@ -4,7 +4,9 @@
 \name{housetasks.raw}
 \alias{housetasks.raw}
 \title{Housetasks}
-\format{A data frame with 1744 rows and 2 columns (tasks and status).}
+\format{
+A data frame with 1744 rows and 2 columns (tasks and status).
+}
 \usage{
 data("housetasks.raw")
 }
