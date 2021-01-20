@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 ```
 
 
-[![Build Status](https://api.travis-ci.org/kassambara/datarium.png)](https://travis-ci.org/kassambara/datarium)
+
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/datarium)](https://cran.r-project.org/package=datarium)
 [![CRAN Checks](https://cranchecks.info/badges/summary/datarium)](https://cran.r-project.org/web/checks/check_results_datarium.html)
 [![Downloads](https://cranlogs.r-pkg.org/badges/datarium)](https://cran.r-project.org/package=datarium)

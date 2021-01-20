@@ -1,10 +1,18 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-[![Build Status](https://api.travis-ci.org/kassambara/datarium.png)](https://travis-ci.org/kassambara/datarium) [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/datarium)](https://cran.r-project.org/package=datarium) [![CRAN Checks](https://cranchecks.info/badges/summary/datarium)](https://cran.r-project.org/web/checks/check_results_datarium.html) [![Downloads](https://cranlogs.r-pkg.org/badges/datarium)](https://cran.r-project.org/package=datarium) [![Total Downloads](https://cranlogs.r-pkg.org/badges/grand-total/datarium?color=orange)](https://cranlogs.r-pkg.org/badges/grand-total/datarium)
+
+[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/datarium)](https://cran.r-project.org/package=datarium)
+[![CRAN
+Checks](https://cranchecks.info/badges/summary/datarium)](https://cran.r-project.org/web/checks/check_results_datarium.html)
+[![Downloads](https://cranlogs.r-pkg.org/badges/datarium)](https://cran.r-project.org/package=datarium)
+[![Total
+Downloads](https://cranlogs.r-pkg.org/badges/grand-total/datarium?color=orange)](https://cranlogs.r-pkg.org/badges/grand-total/datarium)
 
 datarium: Data bank for statistical analyses and visualization
 ==============================================================
 
-Contains data organized by topics: categorical data, regression model, means comparisons, independent and repeated measures ANOVA, mixed ANOVA and ANCOVA.
+Contains data organized by topics: categorical data, regression model,
+means comparisons, independent and repeated measures ANOVA, mixed ANOVA
+and ANCOVA.
 
 -   **Categorical Data**
     -   housetasks.raw
@@ -36,7 +44,9 @@ Contains data organized by topics: categorical data, regression model, means com
 Helper functions
 ----------------
 
-The two data sets (`Titanic` and `housetasks`) are frequency/contingency table. We'll create our demo data sets by recovering the original data from Titanic and housetasks tables.
+The two data sets (`Titanic` and `housetasks`) are frequency/contingency
+table. We’ll create our demo data sets by recovering the original data
+from Titanic and housetasks tables.
 
 To do so, first copy and paste the following helper function:
 
