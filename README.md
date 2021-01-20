@@ -1,5 +1,7 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+[![R build
+status](https://github.com/kassambara/datarium/workflows/R-CMD-check/badge.svg)](https://github.com/kassambara/datarium/actions)
 [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/datarium)](https://cran.r-project.org/package=datarium)
 [![CRAN
 Checks](https://cranchecks.info/badges/summary/datarium)](https://cran.r-project.org/web/checks/check_results_datarium.html)

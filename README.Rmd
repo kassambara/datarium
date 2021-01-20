@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 ```
 
 
-
+[![R build status](https://github.com/kassambara/datarium/workflows/R-CMD-check/badge.svg)](https://github.com/kassambara/datarium/actions)
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/datarium)](https://cran.r-project.org/package=datarium)
 [![CRAN Checks](https://cranchecks.info/badges/summary/datarium)](https://cran.r-project.org/web/checks/check_results_datarium.html)
 [![Downloads](https://cranlogs.r-pkg.org/badges/datarium)](https://cran.r-project.org/package=datarium)
