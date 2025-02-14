@@ -2,15 +2,14 @@
 
 [![R build
 status](https://github.com/kassambara/datarium/workflows/R-CMD-check/badge.svg)](https://github.com/kassambara/datarium/actions)
-[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/datarium)](https://cran.r-project.org/package=datarium)
+[![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/datarium)](https://cran.r-project.org/package=datarium)
 [![CRAN
 Checks](https://cranchecks.info/badges/summary/datarium)](https://cran.r-project.org/web/checks/check_results_datarium.html)
 [![Downloads](https://cranlogs.r-pkg.org/badges/datarium)](https://cran.r-project.org/package=datarium)
 [![Total
 Downloads](https://cranlogs.r-pkg.org/badges/grand-total/datarium?color=orange)](https://cranlogs.r-pkg.org/badges/grand-total/datarium)
 
-datarium: Data bank for statistical analyses and visualization
-==============================================================
+# datarium: Data bank for statistical analyses and visualization
 
 Contains data organized by topics: categorical data, regression model,
 means comparisons, independent and repeated measures ANOVA, mixed ANOVA
@@ -42,9 +41,10 @@ and ANCOVA.
     -   stress
 -   **Comparing Proportions**
     -   properties
+-   **Time Series**:
+    -   AirPassengersDf
 
-Helper functions
-----------------
+## Helper functions
 
 The two data sets (`Titanic` and `housetasks`) are frequency/contingency
 table. We’ll create our demo data sets by recovering the original data

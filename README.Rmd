@@ -53,7 +53,8 @@ Contains data organized by topics: categorical data, regression model, means com
     - stress
 - **Comparing Proportions**
     - properties
-      
+- **Time Series**:
+    - AirPassengersDf
     
 ## Helper functions
    
