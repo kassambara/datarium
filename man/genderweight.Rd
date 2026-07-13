@@ -5,19 +5,27 @@
 \alias{genderweight}
 \title{Weight Data By Gender for Two-Samples Mean Test}
 \format{
-A data frame with 40 rows and 3 columns
+A data frame with 40 rows and 3 columns (stored as a tibble).
+ \describe{
+   \item{id}{participant identifier (1 to 40).}
+   \item{group}{the participant's sex, "F" (female) or "M" (male).}
+   \item{weight}{the participant's body weight.}
+ }
 }
 \usage{
 data("genderweight")
 }
 \description{
 Contains the weights by sex (M for male; F for
- female). The question is whether the average women’s weight differs from the
- average men’s weight?
+ female). The question is whether the average women's weight differs from the
+ average men's weight?
 
  A two-samples independent t-test can be performed to answer to this question.
 }
 \examples{
 data(genderweight)
-head(as.data.frame(genderweight))
+head(genderweight)
+
+# Two-samples independent t-test: do mean weights differ by sex?
+t.test(weight ~ group, data = genderweight)
 }
