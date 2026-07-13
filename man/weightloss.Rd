@@ -12,7 +12,7 @@ data("weightloss")
 }
 \description{
 A researcher wanted to assess the effects of Diet and Exercises
- on weight loss in 10 sedentary males.
+ on weight loss in 12 sedentary males.
 
  The participants were enrolled in four trials: (1) no diet and no exercises;
  (2) diet only; (3) exercises only; and (4) diet and exercises combined.

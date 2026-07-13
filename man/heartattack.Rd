@@ -22,11 +22,11 @@ Measures of cholesterol concentration in 72 participants treated
 
  This data set is suited for three way Anova test.
 
- It contain the following variables: \itemize{ \item gender, which has two
- categories: "male" and "female"; \item risk which has two levels: "low" and
- "high"
- \item drug, which has three categories: "A", "B" and "C".
- }
+ It contain the following variables: \itemize{ \item id, the participant
+ identifier; \item gender, which has two categories: "male" and "female";
+ \item risk, which has two levels: "low" and "high"; \item drug, which has
+ three categories: "A", "B" and "C"; \item cholesterol, the outcome
+ (cholesterol concentration). }
 }
 \examples{
 data(heartattack)
