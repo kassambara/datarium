@@ -5,7 +5,20 @@
 \alias{selfesteem2}
 \title{Self Esteem Score Data for Two-way Repeated Measures ANOVA}
 \format{
-A data frame with 24 rows and 5 columns.
+A data frame with 24 rows and 5 columns (stored as a tibble).
+ \describe{
+   \item{id}{participant identifier (1 to 12); each participant takes part in
+     both trials.}
+   \item{treatment}{the trial, "ctr" (control/placebo) or "Diet".}
+   \item{t1}{the self esteem score at the beginning of the trial.}
+   \item{t2}{the self esteem score midway through the trial.}
+   \item{t3}{the self esteem score at the end of the trial.}
+ }
+ The self esteem score is a simulated measure on an arbitrary scale with no
+ real-world units.
+}
+\source{
+A simulated dataset created for teaching two-way repeated measures ANOVA.
 }
 \usage{
 data("selfesteem2")
@@ -27,5 +40,13 @@ Data are the self esteem score of 12 individuals enrolled in 2
 }
 \examples{
 data(selfesteem2)
-head(as.data.frame(selfesteem2))
+head(selfesteem2)
+
+# Two-way repeated measures ANOVA (treatment x time), both within-subjects
+selfesteem2_long <- reshape(selfesteem2, varying = c("t1", "t2", "t3"),
+                            v.names = "score", timevar = "time",
+                            idvar = c("id", "treatment"), direction = "long")
+summary(aov(score ~ treatment * factor(time) +
+              Error(factor(id)/(treatment * factor(time))),
+            data = selfesteem2_long))
 }

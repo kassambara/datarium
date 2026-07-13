@@ -12,8 +12,26 @@
 #'@name depression
 #'@docType data
 #'@usage data("depression")
-#'@format A data frame with 24 rows and 6 columns.
+#'@format A data frame with 24 rows and 6 columns (stored as a tibble).
+#'  \describe{
+#'    \item{id}{participant identifier (1 to 24).}
+#'    \item{treatment}{the treatment group, "ctr" (control) or "treated".}
+#'    \item{t0}{the depression score at pre-test.}
+#'    \item{t1}{the depression score at the first post-test follow-up.}
+#'    \item{t2}{the depression score at the second post-test follow-up.}
+#'    \item{t3}{the depression score at the third post-test follow-up.}
+#'  }
+#'  The depression score is a simulated measure on an arbitrary scale with no
+#'  real-world units.
+#'@source A simulated dataset created for teaching two-way mixed ANOVA.
 #' @examples
 #' data(depression)
-#' head(as.data.frame(depression))
+#' head(depression)
+#'
+#' # Two-way mixed ANOVA: treatment (between) x time (within)
+#' depression_long <- reshape(depression, varying = c("t0", "t1", "t2", "t3"),
+#'                            v.names = "score", timevar = "time",
+#'                            direction = "long")
+#' summary(aov(score ~ treatment * factor(time) + Error(factor(id)/factor(time)),
+#'             data = depression_long))
 NULL
