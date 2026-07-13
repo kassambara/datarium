@@ -1,0 +1,108 @@
+---
+title: "Meet the datarium datasets"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+```
+
+**datarium** ships 22 small, curated data sets for teaching classical
+statistical inference in R. The idea is simple: **one data set per test**. Each
+data set is built to illustrate exactly one analysis — a *t*-test, an ANOVA, a
+chi-square test, a regression — so you can go straight from "which test do I
+need?" to a worked example, and every one is used in the free
+[Datanovia](https://www.datanovia.com) biostatistics lessons.
+
+The complete map is always one keystroke away in R:
+
+```{r, eval = FALSE}
+library(datarium)
+?datarium
+```
+
+## The promise: one data set per test
+
+Every data set names its analysis in its title and shows the canonical fit in
+its `@examples`. So the workflow is always the same — load it, and run the test
+its help page demonstrates:
+
+```{r}
+library(datarium)
+
+# One-sample t-test: does the average mouse weight differ from 25 g?
+data("mice")
+t.test(mice$weight, mu = 25)
+```
+
+```{r}
+# Poisson regression: infection counts by treatment and age
+data("infections")
+glm(count ~ treatment + age, family = poisson, data = infections)
+```
+
+## Meet the datasets
+
+### Comparing means
+
+| Data set | In one line | Test |
+|---|---|---|
+| `mice` | Do 10 mice weigh more than 25 g? | one-sample *t*-test |
+| `mice2` | The same 10 mice, weighed before and after a treatment. | paired-samples *t*-test |
+| `genderweight` | Do women and men differ in weight? | two-samples (independent) *t*-test |
+
+### Analysis of variance
+
+| Data set | In one line | Test |
+|---|---|---|
+| `jobsatisfaction` | Job-satisfaction score by gender and education level. | two-way ANOVA |
+| `headache` | Migraine pain score across three treatments, by gender and risk. | three-way ANOVA |
+| `heartattack` | Cholesterol across three drugs, by gender and risk. | three-way ANOVA |
+| `selfesteem` | Self-esteem measured at three time points. | one-way repeated-measures ANOVA |
+| `selfesteem2` | Self-esteem across a control and a diet trial, at three time points. | two-way repeated-measures ANOVA |
+| `weightloss` | Weight loss under diet × exercise, over time. | three-way repeated-measures ANOVA |
+| `anxiety` | Anxiety over time in three exercise groups. | two-way mixed ANOVA |
+| `depression` | A depression treatment followed over four time points. | two-way mixed ANOVA |
+| `performance` | Performance at two time points, by gender and stress. | three-way mixed ANOVA |
+| `stress` | Stress score by treatment and exercise, adjusting for age. | two-way ANCOVA |
+
+### Categorical data and proportions
+
+| Data set | In one line | Test |
+|---|---|---|
+| `properties` | Which type of buyer buys which type of property? | chi-square test of independence |
+| `housetasks.raw` | Who in the couple does which household task? | chi-square test of independence |
+| `titanic.raw` | Who survived the Titanic, by class, sex and age? | categorical descriptive statistics |
+| `antismoking` | Smoking status before and after an anti-smoking video. | McNemar's test |
+| `taskachievment` | Success or failure on three tasks by the same people. | Cochran's Q test |
+| `renalstone` | Does renal-stone risk rise with age? | Cochran-Armitage trend test |
+
+### Regression
+
+| Data set | In one line | Test |
+|---|---|---|
+| `marketing` | Sales versus YouTube, Facebook and newspaper budgets. | linear regression |
+| `infections` | Infection counts by treatment and age. | Poisson regression |
+
+### Time series
+
+| Data set | In one line | Test |
+|---|---|---|
+| `AirPassengersDf` | Monthly international airline passengers, 1949–1960. | time series |
+
+## Real vs simulated
+
+datarium is honest about provenance. A handful of data sets are recovered from
+real, published sources — `titanic.raw` from base R's `Titanic`,
+`AirPassengersDf` from base R's `AirPassengers`, `housetasks.raw` from the
+factoextra `housetasks` table, `renalstone` from Hazra and Gogtay (2016). The
+rest are **simulated for teaching**: each such data set's `@source` states so
+plainly, and for the simulated ones the score columns are documented as an
+arbitrary scale with no real-world units, so nothing is over-claimed.
+
+## Where to go next
+
+- `?datarium` — the same one-data-set-per-test map, inside R.
+- Each data set's own help page (e.g. `?anxiety`) — variables, source, and a
+  runnable example of its analysis.
+- The [Datanovia biostatistics lessons](https://www.datanovia.com) — a worked
+  tutorial for each test, using these data sets.
