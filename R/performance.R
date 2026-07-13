@@ -10,7 +10,7 @@
 #'@name performance
 #'@docType data
 #'@usage data("performance")
-#'@format A data frame with 24 rows and 5 columns.
+#'@format A data frame with 60 rows and 5 columns.
 #' @examples
 #' data(performance)
 #' head(as.data.frame(performance))

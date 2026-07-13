@@ -5,7 +5,7 @@
 #'@name jobsatisfaction
 #'@docType data
 #'@usage data("jobsatisfaction")
-#'@format A data frame with 58 rows and 3 columns.
+#'@format A data frame with 58 rows and 4 columns.
 #' @examples
 #' data(jobsatisfaction)
 #' head(as.data.frame(jobsatisfaction))

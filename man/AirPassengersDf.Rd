@@ -5,7 +5,7 @@
 \alias{AirPassengersDf}
 \title{Air Passengers}
 \format{
-A data frame with 142 rows and 2 columns (Month and Passengers).
+A data frame with 144 rows and 2 columns (Month and Passengers).
 }
 \usage{
 data("AirPassengersDf")

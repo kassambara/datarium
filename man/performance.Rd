@@ -5,7 +5,7 @@
 \alias{performance}
 \title{Performance Data for Three-Way Mixed ANOVA}
 \format{
-A data frame with 24 rows and 5 columns.
+A data frame with 60 rows and 5 columns.
 }
 \usage{
 data("performance")
