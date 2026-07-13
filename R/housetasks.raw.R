@@ -4,9 +4,27 @@
 #'@name housetasks.raw
 #'@docType data
 #'@usage data("housetasks.raw")
-#'@format A data frame with 1744 rows and 2 columns (tasks and status).
+#'@format A data frame with 1744 rows and 2 columns (stored as a tibble). Each
+#'  row is one recorded performance of a household task, recovered from the
+#'  original contingency table.
+#'  \describe{
+#'    \item{tasks}{the household task, one of 13 categories: "Laundry",
+#'      "Main_meal", "Dinner", "Breakfeast", "Tidying", "Dishes", "Shopping",
+#'      "Official", "Driving", "Finances", "Insurance", "Repairs" and
+#'      "Holidays". ("Breakfeast" is a misspelling of "Breakfast" carried over
+#'      from the source data.)}
+#'    \item{status}{who performs the task: "Partner1", "Alternating", "Parter2"
+#'      or "Jointly". The two partner categories were relabeled from the source
+#'      data's "Wife" and "Husband"; "Parter2" is a misspelling of "Partner2"
+#'      retained as-is in the stored data.}
+#'  }
+#'@source Derived from the \code{housetasks} data set in the \pkg{factoextra}
+#'  package, with its "Wife" and "Husband" columns relabeled "Partner1" and
+#'  "Partner2", expanded to one row per recorded case.
 #' @examples
 #' data(housetasks.raw)
 #' table(housetasks.raw)
 #'
+#' # Chi-square test of association between task and who performs it
+#' chisq.test(table(housetasks.raw$tasks, housetasks.raw$status))
 NULL
