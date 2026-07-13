@@ -5,7 +5,21 @@
 \alias{weightloss}
 \title{Weight Loss Score Data for Three-way Repeated Measures ANOVA}
 \format{
-A data frame with 48 rows and 6 columns.
+A data frame with 48 rows and 6 columns (stored as a tibble).
+ \describe{
+   \item{id}{participant identifier (1 to 12); each participant performs all
+     four diet/exercises trials.}
+   \item{diet}{whether the trial included a diet, "no" or "yes".}
+   \item{exercises}{whether the trial included exercises, "no" or "yes".}
+   \item{t1}{the weight loss score at the beginning of the trial.}
+   \item{t2}{the weight loss score at the midpoint of the trial.}
+   \item{t3}{the weight loss score at the end of the trial.}
+ }
+ The weight loss score is a simulated measure on an arbitrary scale with no
+ real-world units.
+}
+\source{
+A simulated dataset created for teaching three-way repeated measures ANOVA.
 }
 \usage{
 data("weightloss")
@@ -31,5 +45,14 @@ A researcher wanted to assess the effects of Diet and Exercises
 }
 \examples{
 data(weightloss)
-head(as.data.frame(weightloss))
+head(weightloss)
+
+# Three-way repeated measures ANOVA (diet x exercises x time), all within
+weightloss_long <- reshape(weightloss, varying = c("t1", "t2", "t3"),
+                           v.names = "score", timevar = "time",
+                           idvar = c("id", "diet", "exercises"),
+                           direction = "long")
+summary(aov(score ~ diet * exercises * factor(time) +
+              Error(factor(id)/(diet * exercises * factor(time))),
+            data = weightloss_long))
 }

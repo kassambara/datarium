@@ -5,7 +5,18 @@
 \alias{selfesteem}
 \title{Self-Esteem Score Data for One-way Repeated Measures ANOVA}
 \format{
-A data frame with 10 rows and 4 columns.
+A data frame with 10 rows and 4 columns (stored as a tibble).
+ \describe{
+   \item{id}{participant identifier (1 to 10).}
+   \item{t1}{the self-esteem score at the first time point.}
+   \item{t2}{the self-esteem score at the second time point.}
+   \item{t3}{the self-esteem score at the third time point.}
+ }
+ The self-esteem score is a simulated measure on an arbitrary scale with no
+ real-world units.
+}
+\source{
+A simulated dataset created for teaching one-way repeated measures ANOVA.
 }
 \usage{
 data("selfesteem")
@@ -19,5 +30,12 @@ The dataset contains 10 individuals' self-esteem score on three time points
 }
 \examples{
 data(selfesteem)
-head(as.data.frame(selfesteem))
+head(selfesteem)
+
+# One-way repeated measures ANOVA of the self-esteem score over time
+selfesteem_long <- reshape(selfesteem, varying = c("t1", "t2", "t3"),
+                           v.names = "score", timevar = "time",
+                           direction = "long")
+summary(aov(score ~ factor(time) + Error(factor(id)/factor(time)),
+            data = selfesteem_long))
 }
