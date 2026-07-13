@@ -7,10 +7,17 @@
 #'@name renalstone
 #'@docType data
 #'@usage data("renalstone")
-#'@format A data frame with 3513 rows and 3 columns.
-#'@references Hazra, Avijit, and Nithya Jaideep Gogtay. 2016. “Biostatistics
-#'Series Module 4: Comparing Groups – Categorical Variables.” In Indian Journal
-#'of Dermatology
+#'@format A data frame with 3513 rows and 3 columns (stored as a tibble).
+#'  \describe{
+#'    \item{gender}{the individual's gender, "male" or "female".}
+#'    \item{stone}{whether the individual has a renal stone, "yes" or "no".}
+#'    \item{age}{the age group, an ordered factor: "30-39" < "40-49" < "50-59".}
+#'  }
+#'@source Frequencies reported by Hazra and Gogtay (2016), expanded to one row
+#'  per individual.
+#'@references Hazra, Avijit, and Nithya Jaideep Gogtay. 2016. "Biostatistics
+#'Series Module 4: Comparing Groups - Categorical Variables." In Indian Journal
+#'of Dermatology.
 #' @examples
 #' data(renalstone)
 #' xtabs(~stone+age+gender, data = renalstone)
