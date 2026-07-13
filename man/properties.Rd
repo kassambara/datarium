@@ -5,7 +5,16 @@
 \alias{properties}
 \title{Properties Data for Chi-square Test of Independence}
 \format{
-A data frame with 333 rows and 2 columns.
+A data frame with 333 rows and 2 columns (stored as a tibble).
+ \describe{
+   \item{property_type}{the type of property purchased: "flat", "bungalow",
+     "detached house" or "terrace".}
+   \item{buyer_type}{the type of buyer: "single male", "single female",
+     "married couple" or "family".}
+ }
+}
+\source{
+A simulated dataset for teaching the chi-square test of independence.
 }
 \usage{
 data("properties")
@@ -25,5 +34,8 @@ Contains the type of properties and the buyer types. Buyer
 }
 \examples{
 data("properties")
-head(as.data.frame(properties))
+head(properties)
+
+# Chi-square test of independence between buyer type and property type
+chisq.test(table(properties$property_type, properties$buyer_type))
 }
