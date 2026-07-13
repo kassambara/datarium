@@ -5,7 +5,11 @@
 \alias{mice}
 \title{Mice Weight Data for One Sample Mean Test}
 \format{
-A data frame with 10 rows and 2 columns
+A data frame with 10 rows and 2 columns (stored as a tibble).
+ \describe{
+   \item{name}{mouse identifier, "M_1" to "M_10".}
+   \item{weight}{the mouse weight, in grams.}
+ }
 }
 \usage{
 data("mice")
@@ -18,5 +22,8 @@ A one sample t-test can be performed to answer to this question.
 }
 \examples{
 data(mice)
-head(as.data.frame(mice))
+head(mice)
+
+# One-sample t-test: does the mean weight differ from 25 g?
+t.test(mice$weight, mu = 25)
 }
