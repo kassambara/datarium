@@ -23,37 +23,50 @@ knitr::opts_chunk$set(
 
 # datarium: Data bank for statistical analyses and visualization
 
-Contains data organized by topics: categorical data, regression model, means comparisons, independent and repeated measures ANOVA, mixed ANOVA and ANCOVA.
-    
-    
-- **Categorical Data**
-    - housetasks.raw
-    - titanic.raw
-    - antismoking
-- **Regression Model**
-    - marketing
-- **Comparing Two Means**
-    - mice
-    - mice2
-    - genderweight
-- **Independent-Measures ANOVA**
-    - heartattack
-    - headache
-    - performance
-    - jobsatisfaction
-- **Repeated Measures ANOVA**
-    - selfesteem
-    - selfesteem2
-    - weightloss
-    - depression
-- **Mixed ANOVA**
-    - anxiety
-- **ANCOVA**
-    - stress
-- **Comparing Proportions**
-    - properties
-- **Time Series**:
-    - AirPassengersDf
+Contains 21 curated data sets for teaching classical statistical inference in R. Each data set is paired with the analysis it is designed to teach — one data set per test. The same map is available in R via `?datarium`.
+
+**Comparing means**
+
+| Analysis | Data set |
+|----------|----------|
+| One-sample t-test | `mice` |
+| Paired-samples t-test | `mice2` |
+| Two-samples (independent) t-test | `genderweight` |
+
+**Analysis of variance (ANOVA)**
+
+| Analysis | Data set |
+|----------|----------|
+| Two-way ANOVA | `jobsatisfaction` |
+| Three-way ANOVA | `headache`, `heartattack` |
+| One-way repeated measures ANOVA | `selfesteem` |
+| Two-way repeated measures ANOVA | `selfesteem2` |
+| Three-way repeated measures ANOVA | `weightloss` |
+| Two-way mixed ANOVA | `anxiety`, `depression` |
+| Three-way mixed ANOVA | `performance` |
+| Two-way ANCOVA | `stress` |
+
+**Categorical data and proportions**
+
+| Analysis | Data set |
+|----------|----------|
+| Chi-square test of independence | `properties`, `housetasks.raw` |
+| Categorical descriptive statistics | `titanic.raw` |
+| McNemar's test | `antismoking` |
+| Cochran's Q test | `taskachievment` |
+| Cochran-Armitage trend test | `renalstone` |
+
+**Regression**
+
+| Analysis | Data set |
+|----------|----------|
+| Linear regression | `marketing` |
+
+**Time series**
+
+| Analysis | Data set |
+|----------|----------|
+| Time series | `AirPassengersDf` |
     
 ## Helper functions
    
