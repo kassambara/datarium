@@ -1,0 +1,30 @@
+#'Infection Count Data for Poisson Regression
+#'
+#'@description A simulated dataset giving the number of infections recorded for
+#'  100 patients over a one-year follow-up in a placebo-controlled study. It is
+#'  designed for teaching Poisson regression of a count outcome on a treatment
+#'  group and a continuous covariate.
+#'@name infections
+#'@docType data
+#'@usage data("infections")
+#'@format A data frame with 100 rows and 4 columns.
+#'  \describe{
+#'    \item{id}{patient identifier (1 to 100).}
+#'    \item{treatment}{the treatment group, "placebo" or "treated".}
+#'    \item{age}{the patient's age, in years.}
+#'    \item{count}{the number of infections recorded during the one-year
+#'      follow-up (a count outcome).}
+#'  }
+#'@source A simulated dataset created for teaching Poisson regression. The counts
+#'  were generated as \code{count ~ Poisson(mu)} with
+#'  \code{log(mu) = 1.6 - 0.8 * (treatment == "treated") + 0.25 * ((age - 40) / 10)}
+#'  (see \code{data-raw/infections.R}), so the treated group has a lower infection
+#'  rate.
+#' @examples
+#' data(infections)
+#' head(infections)
+#'
+#' # Poisson regression of the infection count on treatment and age
+#' fit <- glm(count ~ treatment + age, family = poisson, data = infections)
+#' summary(fit)
+NULL

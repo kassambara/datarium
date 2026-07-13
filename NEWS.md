@@ -3,6 +3,8 @@
 ## New features
  
 - New data set `antismoking`, `taskachievment` and `renalstone`
+- New data set `infections`: a simulated count outcome for teaching Poisson
+  regression.
 
 ## Major changes
 
