@@ -10,3 +10,5 @@
 tests\^spelling
 ^\.github$
 ^data-raw$
+^\.claude$
+^CLAUDE\.md$
