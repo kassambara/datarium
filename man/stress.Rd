@@ -5,7 +5,19 @@
 \alias{stress}
 \title{Stress Data for Two-Way ANCOVA}
 \format{
-A data frame with 60 rows and 5 columns.
+A data frame with 60 rows and 5 columns (stored as a tibble).
+ \describe{
+   \item{id}{participant identifier (1 to 60).}
+   \item{score}{the stress score; a simulated measure on an arbitrary scale
+     with no real-world units.}
+   \item{treatment}{whether the participant received the treatment, "yes" or
+     "no".}
+   \item{exercise}{the exercise level, "low", "moderate" or "high".}
+   \item{age}{the participant's age, in years.}
+ }
+}
+\source{
+A simulated dataset created for teaching two-way ANCOVA.
 }
 \usage{
 data("stress")
@@ -20,5 +32,8 @@ Researchers want to evaluate the effect of a new "treatment" and
 }
 \examples{
 data(stress)
-head(as.data.frame(stress))
+head(stress)
+
+# Two-way ANCOVA of the stress score, adjusting for age
+summary(aov(score ~ age + treatment * exercise, data = stress))
 }
