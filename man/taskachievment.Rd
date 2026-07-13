@@ -5,7 +5,16 @@
 \alias{taskachievment}
 \title{Task Achievment Data for Cochran's Q Test}
 \format{
-A data frame with 73 rows and 4 columns.
+A data frame with 73 rows and 4 columns (stored as a tibble).
+ \describe{
+   \item{participant}{participant identifier (1 to 73).}
+   \item{Task1}{the outcome of task 1: 0 (failure) or 1 (success).}
+   \item{Task2}{the outcome of task 2: 0 (failure) or 1 (success).}
+   \item{Task3}{the outcome of task 3: 0 (failure) or 1 (success).}
+ }
+}
+\source{
+A simulated dataset for teaching Cochran's Q test.
 }
 \usage{
 data("taskachievment")
@@ -19,4 +28,7 @@ Repeated measures nominal designs where 73 subjects are asked to
 \examples{
 data(taskachievment)
 head(taskachievment)
+
+# Proportion of success for each task
+colMeans(taskachievment[, c("Task1", "Task2", "Task3")])
 }

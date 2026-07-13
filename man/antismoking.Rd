@@ -5,7 +5,17 @@
 \alias{antismoking}
 \title{Anti-Smoking Emotive Communication Data for McNemar Test}
 \format{
-A data frame with 62 rows and 3 columns.
+A data frame with 62 rows and 3 columns (stored as a tibble).
+ \describe{
+   \item{id}{participant identifier (1 to 62).}
+   \item{before}{the smoking status before the communication, "non.smoker"
+     or "smoker".}
+   \item{after}{the smoking status after the communication, "non.smoker" or
+     "smoker".}
+ }
+}
+\source{
+A simulated dataset for teaching McNemar's test.
 }
 \usage{
 data("antismoking")
@@ -18,4 +28,7 @@ This a demo dataset for McNemar test.
 \examples{
 data(antismoking)
 xtabs(~before + after, data = antismoking)
+
+# McNemar test of the change in smoking status
+mcnemar.test(table(antismoking$before, antismoking$after))
 }
