@@ -12,3 +12,4 @@ tests\^spelling
 ^data-raw$
 ^\.claude$
 ^CLAUDE\.md$
+^vignettes/articles$
