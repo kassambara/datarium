@@ -14,6 +14,7 @@
 #'    \item{group}{the participant's sex, "F" (female) or "M" (male).}
 #'    \item{weight}{the participant's body weight.}
 #'  }
+#'@source A simulated dataset for teaching the two-samples (independent) t-test.
 #' @examples
 #' data(genderweight)
 #' head(genderweight)

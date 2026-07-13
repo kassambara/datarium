@@ -21,6 +21,7 @@
 #'    \item{cholesterol}{the blood cholesterol concentration.}
 #'    \item{id}{participant identifier (1 to 72).}
 #'  }
+#'@source A simulated dataset for teaching three-way ANOVA.
 #' @examples
 #' data(heartattack)
 #' head(heartattack)

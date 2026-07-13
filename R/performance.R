@@ -19,6 +19,7 @@
 #'      arbitrary scale with no real-world units).}
 #'    \item{t2}{the performance score at the second time point (same scale as t1).}
 #'  }
+#'@source A simulated dataset for teaching three-way mixed ANOVA.
 #' @examples
 #' data(performance)
 #' head(performance)
@@ -26,6 +27,6 @@
 #' # Three-way mixed ANOVA: gender and stress (between) x time (within)
 #' perf_long <- reshape(performance, varying = c("t1", "t2"),
 #'                      v.names = "score", timevar = "time", direction = "long")
-#' summary(aov(score ~ gender * stress * factor(time) + Error(factor(id)/time),
+#' summary(aov(score ~ gender * stress * factor(time) + Error(factor(id)/factor(time)),
 #'             data = perf_long))
 NULL

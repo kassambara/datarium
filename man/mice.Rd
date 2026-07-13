@@ -11,6 +11,9 @@ A data frame with 10 rows and 2 columns (stored as a tibble).
    \item{weight}{the mouse weight, in grams.}
  }
 }
+\source{
+A simulated dataset for teaching the one-sample t-test.
+}
 \usage{
 data("mice")
 }

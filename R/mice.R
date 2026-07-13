@@ -12,6 +12,7 @@
 #'    \item{name}{mouse identifier, "M_1" to "M_10".}
 #'    \item{weight}{the mouse weight, in grams.}
 #'  }
+#'@source A simulated dataset for teaching the one-sample t-test.
 #' @examples
 #' data(mice)
 #' head(mice)

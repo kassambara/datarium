@@ -15,6 +15,9 @@ A data frame with 72 rows and 5 columns (stored as a tibble).
      no real-world units).}
  }
 }
+\source{
+A simulated dataset for teaching three-way ANOVA.
+}
 \usage{
 data("headache")
 }

@@ -14,6 +14,7 @@
 #'    \item{score}{a simulated job satisfaction score (an arbitrary scale with
 #'      no real-world units).}
 #'  }
+#'@source A simulated dataset for teaching two-way ANOVA.
 #' @examples
 #' data(jobsatisfaction)
 #' head(jobsatisfaction)

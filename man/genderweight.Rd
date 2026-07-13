@@ -12,6 +12,9 @@ A data frame with 40 rows and 3 columns (stored as a tibble).
    \item{weight}{the participant's body weight.}
  }
 }
+\source{
+A simulated dataset for teaching the two-samples (independent) t-test.
+}
 \usage{
 data("genderweight")
 }
