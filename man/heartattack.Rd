@@ -5,7 +5,14 @@
 \alias{heartattack}
 \title{Heart Attack Data for Three Way ANOVA}
 \format{
-A data frame with 72 rows and 5 columns.
+A data frame with 72 rows and 5 columns (stored as a tibble).
+ \describe{
+   \item{gender}{the participant's gender, "male" or "female".}
+   \item{risk}{the participant's heart attack risk, "high" or "low".}
+   \item{drug}{the drug received, "A", "B" or "C".}
+   \item{cholesterol}{the blood cholesterol concentration.}
+   \item{id}{participant identifier (1 to 72).}
+ }
 }
 \usage{
 data("heartattack")
@@ -21,14 +28,11 @@ Measures of cholesterol concentration in 72 participants treated
  high risk of heart attack.
 
  This data set is suited for three way Anova test.
-
- It contain the following variables: \itemize{ \item id, the participant
- identifier; \item gender, which has two categories: "male" and "female";
- \item risk, which has two levels: "low" and "high"; \item drug, which has
- three categories: "A", "B" and "C"; \item cholesterol, the outcome
- (cholesterol concentration). }
 }
 \examples{
 data(heartattack)
-head(as.data.frame(heartattack))
+head(heartattack)
+
+# Three-way ANOVA of the cholesterol concentration
+summary(aov(cholesterol ~ gender * risk * drug, data = heartattack))
 }

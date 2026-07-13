@@ -10,17 +10,22 @@
 #'  migraine headache.
 #'
 #'  This data set is suited for three way Anova test.
-#'
-#'  It contain the following variables: \itemize{ \item id, the participant
-#'  identifier; \item gender, which has two categories: "male" and "female";
-#'  \item risk, which has two levels: "low" and "high"; \item treatment, which
-#'  has three categories: "X", "Y" and "Z"; \item pain_score, the outcome (pain
-#'  score associated with the migraine headache episode). }
 #'@name headache
 #'@docType data
 #'@usage data("headache")
-#'@format A data frame with 72 rows and 5 columns.
+#'@format A data frame with 72 rows and 5 columns (stored as a tibble).
+#'  \describe{
+#'    \item{id}{participant identifier (1 to 72).}
+#'    \item{gender}{the participant's gender, "male" or "female".}
+#'    \item{risk}{the participant's migraine risk, "high" or "low".}
+#'    \item{treatment}{the treatment received, "X", "Y" or "Z".}
+#'    \item{pain_score}{a simulated migraine pain score (an arbitrary scale with
+#'      no real-world units).}
+#'  }
 #' @examples
 #' data(headache)
-#' head(as.data.frame(headache))
+#' head(headache)
+#'
+#' # Three-way ANOVA of the pain score
+#' summary(aov(pain_score ~ gender * risk * treatment, data = headache))
 NULL

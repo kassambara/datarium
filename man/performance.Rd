@@ -5,7 +5,15 @@
 \alias{performance}
 \title{Performance Data for Three-Way Mixed ANOVA}
 \format{
-A data frame with 60 rows and 5 columns.
+A data frame with 60 rows and 5 columns (stored as a tibble).
+ \describe{
+   \item{id}{participant identifier (1 to 60).}
+   \item{gender}{the participant's gender, "male" or "female".}
+   \item{stress}{the stress level, "low", "moderate" or "high".}
+   \item{t1}{a simulated performance score at the first time point (an
+     arbitrary scale with no real-world units).}
+   \item{t2}{the performance score at the second time point (same scale as t1).}
+ }
 }
 \usage{
 data("performance")
@@ -21,5 +29,11 @@ Contains the performance score measures of participants at two
 }
 \examples{
 data(performance)
-head(as.data.frame(performance))
+head(performance)
+
+# Three-way mixed ANOVA: gender and stress (between) x time (within)
+perf_long <- reshape(performance, varying = c("t1", "t2"),
+                     v.names = "score", timevar = "time", direction = "long")
+summary(aov(score ~ gender * stress * factor(time) + Error(factor(id)/time),
+            data = perf_long))
 }

@@ -5,7 +5,15 @@
 \alias{jobsatisfaction}
 \title{Job Satisfaction Data for Two-Way ANOVA}
 \format{
-A data frame with 58 rows and 4 columns.
+A data frame with 58 rows and 4 columns (stored as a tibble).
+ \describe{
+   \item{id}{participant identifier (1 to 58).}
+   \item{gender}{the participant's gender, "male" or "female".}
+   \item{education_level}{the participant's education level, "school",
+     "college" or "university".}
+   \item{score}{a simulated job satisfaction score (an arbitrary scale with
+     no real-world units).}
+ }
 }
 \usage{
 data("jobsatisfaction")
@@ -15,5 +23,8 @@ Contains the job satisfaction score organized by gender and education level.
 }
 \examples{
 data(jobsatisfaction)
-head(as.data.frame(jobsatisfaction))
+head(jobsatisfaction)
+
+# Two-way ANOVA of satisfaction by gender and education level
+summary(aov(score ~ gender * education_level, data = jobsatisfaction))
 }
