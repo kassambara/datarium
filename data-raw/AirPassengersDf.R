@@ -1,15 +1,17 @@
-## code to prepare `DATASET` dataset goes here
+## Provenance / regeneration check for AirPassengersDf. Base R only.
+##
+## Derivation: the base R `AirPassengers` monthly time series (1949-1960),
+## reshaped to a long data frame with the first day of each month as `Month`.
+## The shipped data/AirPassengersDf.rda is byte-frozen; this reconstructs the
+## object and VERIFIES it fingerprint-identical to the shipped one -- it never
+## overwrites the .rda (the earlier version called usethis::use_data(overwrite =
+## TRUE), which would change the frozen bytes).
 
-library(zoo)
-library(readr)
-df <- data.frame(
-  Month = as.Date(zoo::as.yearmon(time(AirPassengers))), 
+source("data-raw/verify.R")   # verify_against_shipped()
+
+rebuild <- data.frame(
+  Month      = seq(as.Date("1949-01-01"), by = "month", length.out = length(AirPassengers)),
   Passengers = as.numeric(AirPassengers)
-  )
+)
 
-AirPassengersDf <- df
-
-readr::write_csv(AirPassengersDf, "data-raw/AirPassengersDf.csv")
-
-
-usethis::use_data(AirPassengersDf, overwrite = TRUE)
+verify_against_shipped("AirPassengersDf", rebuild, exact = TRUE)
