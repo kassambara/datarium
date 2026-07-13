@@ -15,6 +15,9 @@ A data frame with 58 rows and 4 columns (stored as a tibble).
      no real-world units).}
  }
 }
+\source{
+A simulated dataset for teaching two-way ANOVA.
+}
 \usage{
 data("jobsatisfaction")
 }

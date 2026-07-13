@@ -12,6 +12,7 @@
 #'    \item{before}{the mouse weight before the treatment.}
 #'    \item{after}{the mouse weight after the treatment.}
 #'  }
+#'@source A simulated dataset for teaching the paired-samples t-test.
 #' @examples
 #' data(mice2)
 #' head(mice2)

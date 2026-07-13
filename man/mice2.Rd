@@ -12,6 +12,9 @@ A data frame with 10 rows and 3 columns.
    \item{after}{the mouse weight after the treatment.}
  }
 }
+\source{
+A simulated dataset for teaching the paired-samples t-test.
+}
 \usage{
 data("mice2")
 }

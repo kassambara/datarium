@@ -22,6 +22,7 @@
 #'    \item{pain_score}{a simulated migraine pain score (an arbitrary scale with
 #'      no real-world units).}
 #'  }
+#'@source A simulated dataset for teaching three-way ANOVA.
 #' @examples
 #' data(headache)
 #' head(headache)

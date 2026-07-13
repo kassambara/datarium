@@ -14,6 +14,9 @@ A data frame with 72 rows and 5 columns (stored as a tibble).
    \item{id}{participant identifier (1 to 72).}
  }
 }
+\source{
+A simulated dataset for teaching three-way ANOVA.
+}
 \usage{
 data("heartattack")
 }
