@@ -9,7 +9,7 @@ Downloads](https://cranlogs.r-pkg.org/badges/grand-total/datarium?color=orange)]
 
 # datarium: Data bank for statistical analyses and visualization <img src="man/figures/logo.png" align="right" height="139" alt="datarium hex logo" />
 
-Contains 22 curated data sets for teaching classical statistical
+Contains 23 curated data sets for teaching classical statistical
 inference in R. Each data set is paired with the analysis it is designed
 to teach — one data set per test. The same map is available in R via
 `?datarium`.
@@ -51,6 +51,7 @@ to teach — one data set per test. The same map is available in R via
 |----------|----------|
 | Linear regression | `marketing` |
 | Poisson regression (count data) | `infections` |
+| Logistic regression (real, messy clinical data) | `heartdisease` |
 
 **Time series**
 

@@ -6,7 +6,7 @@ title: "Meet the datarium datasets"
 knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
 ```
 
-**datarium** ships 22 small, curated data sets for teaching classical
+**datarium** ships 23 small, curated data sets for teaching classical
 statistical inference in R. The idea is simple: **one data set per test**. Each
 data set is built to illustrate exactly one analysis — a *t*-test, an ANOVA, a
 chi-square test, a regression — so you can go straight from "which test do I
@@ -82,6 +82,7 @@ glm(count ~ treatment + age, family = poisson, data = infections)
 |---|---|---|
 | `marketing` | Sales versus YouTube, Facebook and newspaper budgets. | linear regression |
 | `infections` | Infection counts by treatment and age. | Poisson regression |
+| `heartdisease` | Real four-site cardiology data, with missing values to clean first. | logistic regression |
 
 ### Time series
 
@@ -94,10 +95,17 @@ glm(count ~ treatment + age, family = poisson, data = infections)
 datarium is honest about provenance. A handful of data sets are recovered from
 real, published sources — `titanic.raw` from base R's `Titanic`,
 `AirPassengersDf` from base R's `AirPassengers`, `housetasks.raw` from the
-factoextra `housetasks` table, `renalstone` from Hazra and Gogtay (2016). The
+factoextra `housetasks` table, `renalstone` from Hazra and Gogtay (2016), and
+`heartdisease` from the UCI Heart Disease repository (Janosi et al., 1989). The
 rest are **simulated for teaching**: each such data set's `@source` states so
 plainly, and for the simulated ones the score columns are documented as an
 arbitrary scale with no real-world units, so nothing is over-claimed.
+
+`heartdisease` is the deliberate exception to how tidy the simulated sets are: it
+ships close to raw — four hospitals' data stacked together, integer-coded
+categories, and heavy, uneven missing values (one site even records a cholesterol
+of `0` to mean "not measured"). It is there to teach the step the clean sets skip
+— inspect and clean the data before you model it.
 
 ## Where to go next
 
