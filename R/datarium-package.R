@@ -1,6 +1,6 @@
 #' datarium: Data Bank for Statistical Analysis and Visualization
 #'
-#' A collection of 22 curated data sets for teaching classical statistical
+#' A collection of 23 curated data sets for teaching classical statistical
 #' inference in R. Each data set is paired with the analysis it is designed to
 #' teach -- one data set per test -- and is used across the Datanovia
 #' biostatistics lessons (\url{https://www.datanovia.com}).
@@ -37,6 +37,7 @@
 #' \tabular{ll}{
 #'   Linear regression \tab \code{\link{marketing}} \cr
 #'   Poisson regression (count data) \tab \code{\link{infections}} \cr
+#'   Logistic regression (real, messy clinical data) \tab \code{\link{heartdisease}} \cr
 #' }
 #'
 #' @section Time series:
