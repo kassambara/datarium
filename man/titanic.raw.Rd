@@ -26,8 +26,16 @@ Survival of passengers on the Titanic. This data set provides
  information on the fate of passengers on the fatal maiden voyage of the
  ocean liner "Titanic". Columns are economic status (Class), Sex,
  Age and Survived.
+
+ It is the data set used in the Datanovia tutorial \dQuote{Descriptive
+ Statistics for Categorical Data in R: Contingency Tables}
+ (\url{https://www.datanovia.com/learn/biostatistics/categorical/categorical-descriptive-statistics-in-r}).
 }
 \examples{
 data(titanic.raw)
 with(titanic.raw, table(Class, Survived))
+}
+\seealso{
+Datanovia tutorial:
+ \href{https://www.datanovia.com/learn/biostatistics/categorical/categorical-descriptive-statistics-in-r}{Descriptive Statistics for Categorical Data in R: Contingency Tables}.
 }

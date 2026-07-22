@@ -7,6 +7,10 @@
 #'
 #'  The data include two between-subjects factors (gender and stress) and one
 #'  within-subject factor (time, repeated measures).
+#'
+#'  It is the data set used in the Datanovia tutorial \dQuote{Mixed ANOVA in R:
+#'  One Between- and One Within-Subjects Factor}
+#'  (\url{https://www.datanovia.com/learn/biostatistics/anova/mixed-anova-in-r}).
 #'@name performance
 #'@docType data
 #'@usage data("performance")
@@ -20,6 +24,9 @@
 #'    \item{t2}{the performance score at the second time point (same scale as t1).}
 #'  }
 #'@source A simulated dataset for teaching three-way mixed ANOVA.
+#'@seealso
+#'  Datanovia tutorial:
+#'  \href{https://www.datanovia.com/learn/biostatistics/anova/mixed-anova-in-r}{Mixed ANOVA in R: One Between- and One Within-Subjects Factor}.
 #' @examples
 #' data(performance)
 #' head(performance)

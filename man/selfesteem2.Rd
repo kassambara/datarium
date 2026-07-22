@@ -37,6 +37,10 @@ Data are the self esteem score of 12 individuals enrolled in 2
  Two-way repeated measures ANOVA can be performed in order to determine
  whether there is interaction between time and treatment on the self
  esteem score.
+
+ For a worked tutorial on this analysis, see the Datanovia lesson
+ \dQuote{Repeated Measures ANOVA in R: Compare Means Across Time}
+ (\url{https://www.datanovia.com/learn/biostatistics/anova/repeated-measures-anova-in-r}).
 }
 \examples{
 data(selfesteem2)
@@ -49,4 +53,9 @@ selfesteem2_long <- reshape(selfesteem2, varying = c("t1", "t2", "t3"),
 summary(aov(score ~ treatment * factor(time) +
               Error(factor(id)/(treatment * factor(time))),
             data = selfesteem2_long))
+}
+\seealso{
+\code{\link{selfesteem}}, the one-way companion data set.
+ Datanovia tutorial:
+ \href{https://www.datanovia.com/learn/biostatistics/anova/repeated-measures-anova-in-r}{Repeated Measures ANOVA in R: Compare Means Across Time}.
 }

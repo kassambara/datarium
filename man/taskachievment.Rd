@@ -24,6 +24,10 @@ Repeated measures nominal designs where 73 subjects are asked to
  perform 3 tasks. The outcome of each task is a dichotomous value, success or
  failure. Each row correspond to a participant (called "block" in the
  jargon). This a demo dataset for Cochran's Q test.
+
+ It is the data set used in the Datanovia tutorial \dQuote{Cochran's Q Test in
+ R: Compare Three or More Paired Proportions}
+ (\url{https://www.datanovia.com/learn/biostatistics/categorical/cochran-q-test-in-r}).
 }
 \examples{
 data(taskachievment)
@@ -31,4 +35,8 @@ head(taskachievment)
 
 # Proportion of success for each task
 colMeans(taskachievment[, c("Task1", "Task2", "Task3")])
+}
+\seealso{
+Datanovia tutorial:
+ \href{https://www.datanovia.com/learn/biostatistics/categorical/cochran-q-test-in-r}{Cochran's Q Test in R: Compare Three or More Paired Proportions}.
 }

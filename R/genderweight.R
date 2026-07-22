@@ -5,6 +5,10 @@
 #'  average men's weight?
 #'
 #'  A two-samples independent t-test can be performed to answer to this question.
+#'
+#'  It is the data set used in the Datanovia tutorial \dQuote{T-Test in R:
+#'  One-Sample, Independent (Student & Welch) & Paired}
+#'  (\url{https://www.datanovia.com/learn/biostatistics/two-groups/t-test-in-r}).
 #'@name genderweight
 #'@docType data
 #'@usage data("genderweight")
@@ -15,6 +19,9 @@
 #'    \item{weight}{the participant's body weight.}
 #'  }
 #'@source A simulated dataset for teaching the two-samples (independent) t-test.
+#'@seealso
+#'  Datanovia tutorial:
+#'  \href{https://www.datanovia.com/learn/biostatistics/two-groups/t-test-in-r}{T-Test in R: One-Sample, Independent (Student & Welch) & Paired}.
 #' @examples
 #' data(genderweight)
 #' head(genderweight)

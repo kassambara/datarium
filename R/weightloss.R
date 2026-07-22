@@ -17,6 +17,10 @@
 #'  Three-way repeated measures ANOVA can be performed in order to determine
 #'  whether there is interaction between diet, exercises and time on the weight
 #'  loss score.
+#'
+#'  For a worked tutorial on this analysis, see the Datanovia lesson
+#'  \dQuote{Repeated Measures ANOVA in R: Compare Means Across Time}
+#'  (\url{https://www.datanovia.com/learn/biostatistics/anova/repeated-measures-anova-in-r}).
 #'@name weightloss
 #'@docType data
 #'@usage data("weightloss")
@@ -33,6 +37,9 @@
 #'  The weight loss score is a simulated measure on an arbitrary scale with no
 #'  real-world units.
 #'@source A simulated dataset created for teaching three-way repeated measures ANOVA.
+#'@seealso
+#'  Datanovia tutorial:
+#'  \href{https://www.datanovia.com/learn/biostatistics/anova/repeated-measures-anova-in-r}{Repeated Measures ANOVA in R: Compare Means Across Time}.
 #' @examples
 #' data(weightloss)
 #' head(weightloss)

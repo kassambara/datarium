@@ -24,6 +24,10 @@ Contains the weights by sex (M for male; F for
  average men's weight?
 
  A two-samples independent t-test can be performed to answer to this question.
+
+ It is the data set used in the Datanovia tutorial \dQuote{T-Test in R:
+ One-Sample, Independent (Student & Welch) & Paired}
+ (\url{https://www.datanovia.com/learn/biostatistics/two-groups/t-test-in-r}).
 }
 \examples{
 data(genderweight)
@@ -31,4 +35,8 @@ head(genderweight)
 
 # Two-samples independent t-test: do mean weights differ by sex?
 t.test(weight ~ group, data = genderweight)
+}
+\seealso{
+Datanovia tutorial:
+ \href{https://www.datanovia.com/learn/biostatistics/two-groups/t-test-in-r}{T-Test in R: One-Sample, Independent (Student & Welch) & Paired}.
 }

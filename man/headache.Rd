@@ -32,6 +32,10 @@ A pharmaceutical company tested three treatments for migraine headache
  migraine headache.
 
  This data set is suited for three way Anova test.
+
+ It is the data set used in the Datanovia tutorial \dQuote{Three-Way ANOVA in
+ R: Three Factors and Their Interaction}
+ (\url{https://www.datanovia.com/learn/biostatistics/anova/three-way-anova-in-r}).
 }
 \examples{
 data(headache)
@@ -39,4 +43,9 @@ head(headache)
 
 # Three-way ANOVA of the pain score
 summary(aov(pain_score ~ gender * risk * treatment, data = headache))
+}
+\seealso{
+\code{\link{heartattack}}, the companion three-way ANOVA data set.
+ Datanovia tutorial:
+ \href{https://www.datanovia.com/learn/biostatistics/anova/three-way-anova-in-r}{Three-Way ANOVA in R: Three Factors and Their Interaction}.
 }

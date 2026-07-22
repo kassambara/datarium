@@ -9,6 +9,10 @@
 #'  ahead of logistic regression, chi-square tests and group comparisons. The
 #'  values are the original UCI codes and are \strong{not} relabelled; see the
 #'  \code{data-raw/heartdisease/heart-disease.names} codebook.
+#'
+#'  For a worked tutorial on this analysis, see the Datanovia lesson
+#'  \dQuote{Logistic Regression in R: Model a Binary Outcome}
+#'  (\url{https://www.datanovia.com/learn/biostatistics/regression/logistic-regression-in-r}).
 #'@name heartdisease
 #'@docType data
 #'@usage data("heartdisease")
@@ -63,6 +67,9 @@
 #'  Sandhu, S., Guppy, K. H., Lee, S., & Froelicher, V. (1989). International
 #'  application of a new probability algorithm for the diagnosis of coronary
 #'  artery disease. \emph{The American Journal of Cardiology}, 64(5), 304--310.
+#'@seealso
+#'  Datanovia tutorial:
+#'  \href{https://www.datanovia.com/learn/biostatistics/regression/logistic-regression-in-r}{Logistic Regression in R: Model a Binary Outcome}.
 #' @examples
 #' data("heartdisease")
 #'

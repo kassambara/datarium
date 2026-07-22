@@ -3,39 +3,36 @@ templates:
     bootswatch: lumen
     ganalytics: UA-54921687-5
 reference:
-  - title: Categorical Data
+  - title: Comparing means
     contents:
+      - mice
+      - mice2
+      - genderweight
+  - title: Analysis of variance (ANOVA)
+    contents:
+      - jobsatisfaction
+      - headache
+      - heartattack
+      - selfesteem
+      - selfesteem2
+      - weightloss
+      - anxiety
+      - depression
+      - performance
+      - stress
+  - title: Categorical data and proportions
+    contents:
+      - properties
       - housetasks.raw
       - titanic.raw
       - antismoking
       - taskachievment
       - renalstone
-  - title: Data for Regression Model
+  - title: Regression
     contents:
       - marketing
-  - title: Data for Comparing Two Means
+      - infections
+      - heartdisease
+  - title: Time series
     contents:
-      - mice
-      - mice2
-      - genderweight
-  - title: Data for Independent-Measures ANOVA
-    contents:
-      - heartattack
-      - headache
-      - performance
-      - jobsatisfaction
-  - title: Data for Repeated Measures ANOVA
-    contents:
-      - selfesteem
-      - selfesteem2
-      - weightloss
-      - depression
-  - title: Data for Mixed ANOVA
-    contents:
-      - anxiety
-  - title: Data for ANCOVA
-    contents:
-      - stress
-  - title: Comparing Proportions
-    contents:
-      - properties
+      - AirPassengersDf

@@ -30,6 +30,10 @@ The data provide the anxiety score, measured at three time
 
  Two-way mixed ANOVA can be used to evaluate if there is interaction between
  group and time in explaining the anxiety score.
+
+ It is the data set used in the Datanovia tutorial \dQuote{Mixed ANOVA in R:
+ One Between- and One Within-Subjects Factor}
+ (\url{https://www.datanovia.com/learn/biostatistics/anova/mixed-anova-in-r}).
 }
 \examples{
 data(anxiety)
@@ -41,4 +45,8 @@ anxiety_long <- reshape(anxiety, varying = c("t1", "t2", "t3"),
                         direction = "long")
 summary(aov(score ~ group * factor(time) + Error(factor(id)/factor(time)),
             data = anxiety_long))
+}
+\seealso{
+Datanovia tutorial:
+ \href{https://www.datanovia.com/learn/biostatistics/anova/mixed-anova-in-r}{Mixed ANOVA in R: One Between- and One Within-Subjects Factor}.
 }

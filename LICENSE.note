@@ -1,0 +1,37 @@
+datarium: licensing of code and data
+=====================================
+
+Package code
+------------
+The package code (the R documentation sources and package
+infrastructure) is licensed under GPL-2, as stated in the DESCRIPTION
+"License" field.
+
+Data sets
+---------
+Except where noted below, the data sets in this package are dedicated
+to the public domain by the package author under the Creative Commons
+CC0 1.0 Universal Public Domain Dedication
+(https://creativecommons.org/publicdomain/zero/1.0/).
+
+Most of these data sets were created by the author -- simulated for
+teaching, each with a fixed random seed (see the data set's help page).
+Some are reshaped or expanded from base R data sets or from publicly
+reported summary tables -- for example "AirPassengersDf" and
+"titanic.raw" from base R's "AirPassengers" and "Titanic",
+"housetasks.raw" from a published table, and "renalstone" from Hazra
+and Gogtay (2016). Each such origin is credited in the data set's help
+page ("@source"). The CC0 dedication covers this package's own
+contribution -- the compilation, simulation, reshaping and case-level
+recovery; the underlying statistical facts are not themselves subject
+to copyright.
+
+heartdisease
+------------
+The "heartdisease" data set is redistributed from the UCI Machine
+Learning Repository under the Creative Commons Attribution 4.0
+International licence (CC BY 4.0,
+https://creativecommons.org/licenses/by/4.0/). When using it, please
+attribute the source and cite Janosi, Steinbrunn, Pfisterer and Detrano
+(1989), Heart Disease, UCI Machine Learning Repository,
+doi:10.24432/C52P4X. See "?heartdisease" for the full attribution.

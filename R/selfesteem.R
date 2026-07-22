@@ -5,6 +5,10 @@
 #'
 #'  One-way repeated measures ANOVA can be performed in order to determine the
 #'  effect of time on the self-esteem score.
+#'
+#'  It is the data set used in the Datanovia tutorial \dQuote{Repeated Measures
+#'  ANOVA in R: Compare Means Across Time}
+#'  (\url{https://www.datanovia.com/learn/biostatistics/anova/repeated-measures-anova-in-r}).
 #'@name selfesteem
 #'@docType data
 #'@usage data("selfesteem")
@@ -18,6 +22,10 @@
 #'  The self-esteem score is a simulated measure on an arbitrary scale with no
 #'  real-world units.
 #'@source A simulated dataset created for teaching one-way repeated measures ANOVA.
+#'@seealso
+#'  \code{\link{selfesteem2}}, the two-way (treatment x time) companion data set.
+#'  Datanovia tutorial:
+#'  \href{https://www.datanovia.com/learn/biostatistics/anova/repeated-measures-anova-in-r}{Repeated Measures ANOVA in R: Compare Means Across Time}.
 #' @examples
 #' data(selfesteem)
 #' head(selfesteem)

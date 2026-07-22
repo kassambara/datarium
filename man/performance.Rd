@@ -29,6 +29,10 @@ Contains the performance score measures of participants at two
 
  The data include two between-subjects factors (gender and stress) and one
  within-subject factor (time, repeated measures).
+
+ It is the data set used in the Datanovia tutorial \dQuote{Mixed ANOVA in R:
+ One Between- and One Within-Subjects Factor}
+ (\url{https://www.datanovia.com/learn/biostatistics/anova/mixed-anova-in-r}).
 }
 \examples{
 data(performance)
@@ -39,4 +43,8 @@ perf_long <- reshape(performance, varying = c("t1", "t2"),
                      v.names = "score", timevar = "time", direction = "long")
 summary(aov(score ~ gender * stress * factor(time) + Error(factor(id)/factor(time)),
             data = perf_long))
+}
+\seealso{
+Datanovia tutorial:
+ \href{https://www.datanovia.com/learn/biostatistics/anova/mixed-anova-in-r}{Mixed ANOVA in R: One Between- and One Within-Subjects Factor}.
 }

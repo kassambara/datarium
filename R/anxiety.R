@@ -6,6 +6,10 @@
 #'
 #'  Two-way mixed ANOVA can be used to evaluate if there is interaction between
 #'  group and time in explaining the anxiety score.
+#'
+#'  It is the data set used in the Datanovia tutorial \dQuote{Mixed ANOVA in R:
+#'  One Between- and One Within-Subjects Factor}
+#'  (\url{https://www.datanovia.com/learn/biostatistics/anova/mixed-anova-in-r}).
 #'@name anxiety
 #'@docType data
 #'@usage data("anxiety")
@@ -21,6 +25,9 @@
 #'  The anxiety score is a simulated measure on an arbitrary scale with no
 #'  real-world units.
 #'@source A simulated dataset created for teaching two-way mixed ANOVA.
+#'@seealso
+#'  Datanovia tutorial:
+#'  \href{https://www.datanovia.com/learn/biostatistics/anova/mixed-anova-in-r}{Mixed ANOVA in R: One Between- and One Within-Subjects Factor}.
 #' @examples
 #' data(anxiety)
 #' head(anxiety)

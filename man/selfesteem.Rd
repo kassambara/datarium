@@ -27,6 +27,10 @@ The dataset contains 10 individuals' self-esteem score on three time points
 
  One-way repeated measures ANOVA can be performed in order to determine the
  effect of time on the self-esteem score.
+
+ It is the data set used in the Datanovia tutorial \dQuote{Repeated Measures
+ ANOVA in R: Compare Means Across Time}
+ (\url{https://www.datanovia.com/learn/biostatistics/anova/repeated-measures-anova-in-r}).
 }
 \examples{
 data(selfesteem)
@@ -38,4 +42,9 @@ selfesteem_long <- reshape(selfesteem, varying = c("t1", "t2", "t3"),
                            direction = "long")
 summary(aov(score ~ factor(time) + Error(factor(id)/factor(time)),
             data = selfesteem_long))
+}
+\seealso{
+\code{\link{selfesteem2}}, the two-way (treatment x time) companion data set.
+ Datanovia tutorial:
+ \href{https://www.datanovia.com/learn/biostatistics/anova/repeated-measures-anova-in-r}{Repeated Measures ANOVA in R: Compare Means Across Time}.
 }

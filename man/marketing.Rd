@@ -27,10 +27,18 @@ A data frame containing the impact of three advertising medias
  (youtube, facebook and newspaper) on sales. Data are the advertising budget
  in thousands of dollars along with the sales (in thousands of units). The
  advertising experiment has been repeated 200 times. This is a simulated data.
+
+ It is the data set used in the Datanovia tutorial \dQuote{Multiple Linear
+ Regression in R: Several Predictors}
+ (\url{https://www.datanovia.com/learn/biostatistics/regression/multiple-linear-regression-in-r}).
 }
 \examples{
 data(marketing)
 res.lm <- lm(sales ~ youtube*facebook, data = marketing)
 summary(res.lm)
 
+}
+\seealso{
+Datanovia tutorial:
+ \href{https://www.datanovia.com/learn/biostatistics/regression/multiple-linear-regression-in-r}{Multiple Linear Regression in R: Several Predictors}.
 }

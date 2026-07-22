@@ -42,6 +42,10 @@ A researcher wanted to assess the effects of Diet and Exercises
  Three-way repeated measures ANOVA can be performed in order to determine
  whether there is interaction between diet, exercises and time on the weight
  loss score.
+
+ For a worked tutorial on this analysis, see the Datanovia lesson
+ \dQuote{Repeated Measures ANOVA in R: Compare Means Across Time}
+ (\url{https://www.datanovia.com/learn/biostatistics/anova/repeated-measures-anova-in-r}).
 }
 \examples{
 data(weightloss)
@@ -55,4 +59,8 @@ weightloss_long <- reshape(weightloss, varying = c("t1", "t2", "t3"),
 summary(aov(score ~ diet * exercises * factor(time) +
               Error(factor(id)/(diet * exercises * factor(time))),
             data = weightloss_long))
+}
+\seealso{
+Datanovia tutorial:
+ \href{https://www.datanovia.com/learn/biostatistics/anova/repeated-measures-anova-in-r}{Repeated Measures ANOVA in R: Compare Means Across Time}.
 }

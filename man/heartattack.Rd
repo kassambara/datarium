@@ -31,6 +31,10 @@ Measures of cholesterol concentration in 72 participants treated
  high risk of heart attack.
 
  This data set is suited for three way Anova test.
+
+ For a worked tutorial on this analysis, see the Datanovia lesson
+ \dQuote{Three-Way ANOVA in R: Three Factors and Their Interaction}
+ (\url{https://www.datanovia.com/learn/biostatistics/anova/three-way-anova-in-r}).
 }
 \examples{
 data(heartattack)
@@ -38,4 +42,9 @@ head(heartattack)
 
 # Three-way ANOVA of the cholesterol concentration
 summary(aov(cholesterol ~ gender * risk * drug, data = heartattack))
+}
+\seealso{
+\code{\link{headache}}, the companion three-way ANOVA data set.
+ Datanovia tutorial:
+ \href{https://www.datanovia.com/learn/biostatistics/anova/three-way-anova-in-r}{Three-Way ANOVA in R: Three Factors and Their Interaction}.
 }

@@ -24,6 +24,10 @@ data("antismoking")
 Paired nominal data providing the smoking status 62 individuals
  before and after emotive video communications showing the danger of smoking.
 This a demo dataset for McNemar test.
+
+ It is the data set used in the Datanovia tutorial \dQuote{McNemar's Test in
+ R: Compare Paired Proportions (Before/After)}
+ (\url{https://www.datanovia.com/learn/biostatistics/categorical/mcnemar-test-in-r}).
 }
 \examples{
 data(antismoking)
@@ -31,4 +35,8 @@ xtabs(~before + after, data = antismoking)
 
 # McNemar test of the change in smoking status
 mcnemar.test(table(antismoking$before, antismoking$after))
+}
+\seealso{
+Datanovia tutorial:
+ \href{https://www.datanovia.com/learn/biostatistics/categorical/mcnemar-test-in-r}{McNemar's Test in R: Compare Paired Proportions (Before/After)}.
 }

@@ -30,6 +30,10 @@ data("housetasks.raw")
 }
 \description{
 A data frame containing the frequency of execution of 13 house tasks in the couple.
+
+ It is the data set used in the Datanovia tutorial \dQuote{Chi-Square Test of
+ Independence in R: Are Two Variables Associated?}
+ (\url{https://www.datanovia.com/learn/biostatistics/categorical/chi-square-test-of-independence-in-r}).
 }
 \examples{
 data(housetasks.raw)
@@ -37,4 +41,8 @@ table(housetasks.raw)
 
 # Chi-square test of association between task and who performs it
 chisq.test(table(housetasks.raw$tasks, housetasks.raw$status))
+}
+\seealso{
+Datanovia tutorial:
+ \href{https://www.datanovia.com/learn/biostatistics/categorical/chi-square-test-of-independence-in-r}{Chi-Square Test of Independence in R: Are Two Variables Associated?}.
 }
