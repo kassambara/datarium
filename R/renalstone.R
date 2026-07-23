@@ -4,6 +4,10 @@
 #'  calculi according to age and gender. This a demo dataset for
 #'  Cochran-Armitage trend test for investigating whether there is a linear
 #'  trend between the proportion of individual with renal stone and ages.
+#'
+#'  It is the data set used in the Datanovia tutorial \dQuote{Cochran-Armitage
+#'  Trend Test in R: Test a Trend in Proportions}
+#'  (\url{https://www.datanovia.com/learn/biostatistics/categorical/cochran-armitage-trend-test-in-r}).
 #'@name renalstone
 #'@docType data
 #'@usage data("renalstone")
@@ -18,6 +22,9 @@
 #'@references Hazra, Avijit, and Nithya Jaideep Gogtay. 2016. "Biostatistics
 #'Series Module 4: Comparing Groups - Categorical Variables." In Indian Journal
 #'of Dermatology.
+#'@seealso
+#'  Datanovia tutorial:
+#'  \href{https://www.datanovia.com/learn/biostatistics/categorical/cochran-armitage-trend-test-in-r}{Cochran-Armitage Trend Test in R: Test a Trend in Proportions}.
 #' @examples
 #' data(renalstone)
 #' xtabs(~stone+age+gender, data = renalstone)

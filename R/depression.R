@@ -9,6 +9,10 @@
 #'
 #'  Repeated measures ANOVA can be performed in order to determine the effect
 #'  of the treatment and the effect of time on the depression score.
+#'
+#'  For a worked tutorial on this analysis, see the Datanovia lesson
+#'  \dQuote{Mixed ANOVA in R: One Between- and One Within-Subjects Factor}
+#'  (\url{https://www.datanovia.com/learn/biostatistics/anova/mixed-anova-in-r}).
 #'@name depression
 #'@docType data
 #'@usage data("depression")
@@ -24,6 +28,9 @@
 #'  The depression score is a simulated measure on an arbitrary scale with no
 #'  real-world units.
 #'@source A simulated dataset created for teaching two-way mixed ANOVA.
+#'@seealso
+#'  Datanovia tutorial:
+#'  \href{https://www.datanovia.com/learn/biostatistics/anova/mixed-anova-in-r}{Mixed ANOVA in R: One Between- and One Within-Subjects Factor}.
 #' @examples
 #' data(depression)
 #' head(depression)

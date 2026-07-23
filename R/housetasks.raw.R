@@ -1,6 +1,10 @@
 #'Housetasks
 #'
 #'@description A data frame containing the frequency of execution of 13 house tasks in the couple.
+#'
+#'  It is the data set used in the Datanovia tutorial \dQuote{Chi-Square Test of
+#'  Independence in R: Are Two Variables Associated?}
+#'  (\url{https://www.datanovia.com/learn/biostatistics/categorical/chi-square-test-of-independence-in-r}).
 #'@name housetasks.raw
 #'@docType data
 #'@usage data("housetasks.raw")
@@ -21,6 +25,9 @@
 #'@source Derived from the \code{housetasks} data set in the \pkg{factoextra}
 #'  package, with its "Wife" and "Husband" columns relabeled "Partner1" and
 #'  "Partner2", expanded to one row per recorded case.
+#'@seealso
+#'  Datanovia tutorial:
+#'  \href{https://www.datanovia.com/learn/biostatistics/categorical/chi-square-test-of-independence-in-r}{Chi-Square Test of Independence in R: Are Two Variables Associated?}.
 #' @examples
 #' data(housetasks.raw)
 #' table(housetasks.raw)

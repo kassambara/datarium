@@ -29,6 +29,10 @@ Researchers want to evaluate the effect of a new "treatment" and
  Two-way ANCOVA can be performed in order to determine
  whether there is interaction between exercise and treatment on the stress
  score.
+
+ It is the data set used in the Datanovia tutorial \dQuote{ANCOVA in R:
+ Compare Group Means Adjusted for a Covariate}
+ (\url{https://www.datanovia.com/learn/biostatistics/anova/ancova-in-r}).
 }
 \examples{
 data(stress)
@@ -36,4 +40,8 @@ head(stress)
 
 # Two-way ANCOVA of the stress score, adjusting for age
 summary(aov(score ~ age + treatment * exercise, data = stress))
+}
+\seealso{
+Datanovia tutorial:
+ \href{https://www.datanovia.com/learn/biostatistics/anova/ancova-in-r}{ANCOVA in R: Compare Group Means Adjusted for a Covariate}.
 }

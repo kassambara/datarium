@@ -3,6 +3,10 @@
 #'@description contains the weight of 10 mice before and after the treatment.
 #'
 #' A paired-samples t-test can be performed to answer to this question.
+#'
+#'  It is the data set used in the Datanovia tutorial \dQuote{T-Test in R:
+#'  One-Sample, Independent (Student & Welch) & Paired}
+#'  (\url{https://www.datanovia.com/learn/biostatistics/two-groups/t-test-in-r}).
 #'@name mice2
 #'@docType data
 #'@usage data("mice2")
@@ -13,6 +17,10 @@
 #'    \item{after}{the mouse weight after the treatment.}
 #'  }
 #'@source A simulated dataset for teaching the paired-samples t-test.
+#'@seealso
+#'  \code{\link{mice}}, the one-sample companion data set.
+#'  Datanovia tutorial:
+#'  \href{https://www.datanovia.com/learn/biostatistics/two-groups/t-test-in-r}{T-Test in R: One-Sample, Independent (Student & Welch) & Paired}.
 #' @examples
 #' data(mice2)
 #' head(mice2)

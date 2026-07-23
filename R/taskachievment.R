@@ -4,6 +4,10 @@
 #'  perform 3 tasks. The outcome of each task is a dichotomous value, success or
 #'  failure. Each row correspond to a participant (called "block" in the
 #'  jargon). This a demo dataset for Cochran's Q test.
+#'
+#'  It is the data set used in the Datanovia tutorial \dQuote{Cochran's Q Test in
+#'  R: Compare Three or More Paired Proportions}
+#'  (\url{https://www.datanovia.com/learn/biostatistics/categorical/cochran-q-test-in-r}).
 #'@name taskachievment
 #'@docType data
 #'@usage data("taskachievment")
@@ -15,6 +19,9 @@
 #'    \item{Task3}{the outcome of task 3: 0 (failure) or 1 (success).}
 #'  }
 #'@source A simulated dataset for teaching Cochran's Q test.
+#'@seealso
+#'  Datanovia tutorial:
+#'  \href{https://www.datanovia.com/learn/biostatistics/categorical/cochran-q-test-in-r}{Cochran's Q Test in R: Compare Three or More Paired Proportions}.
 #' @examples
 #' data(taskachievment)
 #' head(taskachievment)

@@ -10,6 +10,10 @@
 #'  high risk of heart attack.
 #'
 #'  This data set is suited for three way Anova test.
+#'
+#'  For a worked tutorial on this analysis, see the Datanovia lesson
+#'  \dQuote{Three-Way ANOVA in R: Three Factors and Their Interaction}
+#'  (\url{https://www.datanovia.com/learn/biostatistics/anova/three-way-anova-in-r}).
 #'@name heartattack
 #'@docType data
 #'@usage data("heartattack")
@@ -22,6 +26,10 @@
 #'    \item{id}{participant identifier (1 to 72).}
 #'  }
 #'@source A simulated dataset for teaching three-way ANOVA.
+#'@seealso
+#'  \code{\link{headache}}, the companion three-way ANOVA data set.
+#'  Datanovia tutorial:
+#'  \href{https://www.datanovia.com/learn/biostatistics/anova/three-way-anova-in-r}{Three-Way ANOVA in R: Three Factors and Their Interaction}.
 #' @examples
 #' data(heartattack)
 #' head(heartattack)

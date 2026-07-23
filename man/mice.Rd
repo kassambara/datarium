@@ -22,6 +22,10 @@ Contains the weight of 10 mice. The question is whether the
  average weight of the mice differs from 25g.
 
 A one sample t-test can be performed to answer to this question.
+
+ It is the data set used in the Datanovia tutorial \dQuote{T-Test in R:
+ One-Sample, Independent (Student & Welch) & Paired}
+ (\url{https://www.datanovia.com/learn/biostatistics/two-groups/t-test-in-r}).
 }
 \examples{
 data(mice)
@@ -29,4 +33,9 @@ head(mice)
 
 # One-sample t-test: does the mean weight differ from 25 g?
 t.test(mice$weight, mu = 25)
+}
+\seealso{
+\code{\link{mice2}}, the paired-samples companion data set.
+ Datanovia tutorial:
+ \href{https://www.datanovia.com/learn/biostatistics/two-groups/t-test-in-r}{T-Test in R: One-Sample, Independent (Student & Welch) & Paired}.
 }

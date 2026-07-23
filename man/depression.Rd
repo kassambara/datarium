@@ -32,6 +32,10 @@ The data correspond to an experiment in which a treatment for depression is
 
  Repeated measures ANOVA can be performed in order to determine the effect
  of the treatment and the effect of time on the depression score.
+
+ For a worked tutorial on this analysis, see the Datanovia lesson
+ \dQuote{Mixed ANOVA in R: One Between- and One Within-Subjects Factor}
+ (\url{https://www.datanovia.com/learn/biostatistics/anova/mixed-anova-in-r}).
 }
 \examples{
 data(depression)
@@ -43,4 +47,8 @@ depression_long <- reshape(depression, varying = c("t0", "t1", "t2", "t3"),
                            direction = "long")
 summary(aov(score ~ treatment * factor(time) + Error(factor(id)/factor(time)),
             data = depression_long))
+}
+\seealso{
+Datanovia tutorial:
+ \href{https://www.datanovia.com/learn/biostatistics/anova/mixed-anova-in-r}{Mixed ANOVA in R: One Between- and One Within-Subjects Factor}.
 }

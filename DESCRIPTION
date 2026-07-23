@@ -1,12 +1,15 @@
 Package: datarium
 Type: Package
 Title: Data Bank for Statistical Analysis and Visualization
-Version: 0.1.0.999
-Date: 2019-05-19
+Version: 0.2.0
+Date: 2026-07-23
 Authors@R: c(
     person("Alboukadel", "Kassambara", role = c("aut", "cre"), email = "alboukadel.kassambara@gmail.com"))
-Description: Contains data organized by topics: categorical data, regression model, 
+Description: Contains data organized by topics: categorical data, regression model,
             means comparisons, independent and repeated measures ANOVA, mixed ANOVA and ANCOVA.
+            The package code is under GPL-2; the data sets are covered by the terms in
+            the 'LICENSE.note' file (the author's data sets under CC0 1.0, and the
+            'heartdisease' data under CC BY 4.0, see the 'heartdisease' help page).
 License: GPL-2
 Encoding: UTF-8
 LazyData: true
@@ -14,6 +17,6 @@ Depends:
     R (>= 3.1.0)
 URL: https://rpkgs.datanovia.com/datarium/
 BugReports: https://github.com/kassambara/datarium/issues
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.3
 Suggests: 
     knitr

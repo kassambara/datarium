@@ -22,6 +22,10 @@ data("mice2")
 contains the weight of 10 mice before and after the treatment.
 
 A paired-samples t-test can be performed to answer to this question.
+
+ It is the data set used in the Datanovia tutorial \dQuote{T-Test in R:
+ One-Sample, Independent (Student & Welch) & Paired}
+ (\url{https://www.datanovia.com/learn/biostatistics/two-groups/t-test-in-r}).
 }
 \examples{
 data(mice2)
@@ -29,4 +33,9 @@ head(mice2)
 
 # Paired-samples t-test: did the treatment change the weight?
 t.test(mice2$before, mice2$after, paired = TRUE)
+}
+\seealso{
+\code{\link{mice}}, the one-sample companion data set.
+ Datanovia tutorial:
+ \href{https://www.datanovia.com/learn/biostatistics/two-groups/t-test-in-r}{T-Test in R: One-Sample, Independent (Student & Welch) & Paired}.
 }

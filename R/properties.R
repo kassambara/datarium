@@ -11,6 +11,10 @@
 #'  Chi-square test of independence can be used to assess the association between
 #'  the type of buyer who purchases a property and the type of property that is
 #'  purchased.
+#'
+#'  For a worked tutorial on this analysis, see the Datanovia lesson
+#'  \dQuote{Chi-Square Test of Independence in R: Are Two Variables Associated?}
+#'  (\url{https://www.datanovia.com/learn/biostatistics/categorical/chi-square-test-of-independence-in-r}).
 #'@name properties
 #'@docType data
 #'@usage data("properties")
@@ -22,6 +26,9 @@
 #'      "married couple" or "family".}
 #'  }
 #'@source A simulated dataset for teaching the chi-square test of independence.
+#'@seealso
+#'  Datanovia tutorial:
+#'  \href{https://www.datanovia.com/learn/biostatistics/categorical/chi-square-test-of-independence-in-r}{Chi-Square Test of Independence in R: Are Two Variables Associated?}.
 #' @examples
 #' data("properties")
 #' head(properties)

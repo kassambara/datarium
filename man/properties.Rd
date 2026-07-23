@@ -31,6 +31,10 @@ Contains the type of properties and the buyer types. Buyer
  Chi-square test of independence can be used to assess the association between
  the type of buyer who purchases a property and the type of property that is
  purchased.
+
+ For a worked tutorial on this analysis, see the Datanovia lesson
+ \dQuote{Chi-Square Test of Independence in R: Are Two Variables Associated?}
+ (\url{https://www.datanovia.com/learn/biostatistics/categorical/chi-square-test-of-independence-in-r}).
 }
 \examples{
 data("properties")
@@ -38,4 +42,8 @@ head(properties)
 
 # Chi-square test of independence between buyer type and property type
 chisq.test(table(properties$property_type, properties$buyer_type))
+}
+\seealso{
+Datanovia tutorial:
+ \href{https://www.datanovia.com/learn/biostatistics/categorical/chi-square-test-of-independence-in-r}{Chi-Square Test of Independence in R: Are Two Variables Associated?}.
 }

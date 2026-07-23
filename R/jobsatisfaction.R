@@ -2,6 +2,10 @@
 #'
 #'@description
 #'  Contains the job satisfaction score organized by gender and education level.
+#'
+#'  It is the data set used in the Datanovia tutorial \dQuote{Two-Way ANOVA in
+#'  R: Two Factors and Their Interaction}
+#'  (\url{https://www.datanovia.com/learn/biostatistics/anova/two-way-anova-in-r}).
 #'@name jobsatisfaction
 #'@docType data
 #'@usage data("jobsatisfaction")
@@ -15,6 +19,9 @@
 #'      no real-world units).}
 #'  }
 #'@source A simulated dataset for teaching two-way ANOVA.
+#'@seealso
+#'  Datanovia tutorial:
+#'  \href{https://www.datanovia.com/learn/biostatistics/anova/two-way-anova-in-r}{Two-Way ANOVA in R: Two Factors and Their Interaction}.
 #' @examples
 #' data(jobsatisfaction)
 #' head(jobsatisfaction)
